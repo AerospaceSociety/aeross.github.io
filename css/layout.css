@@ -23,9 +23,14 @@
 /* ------------------------------------------------------------------ */
 
 body {
-   background: rgba(0, 10, 20, 1)
+   background: rgba(0, 10, 20, 1);
+   overflow-x: hidden;
 }
 
+@font-face {
+   font-family: aileron;
+   src: url(fonts/Ailerons\ 400.otf)
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -47,8 +52,14 @@ header {
    right: 0;
    margin: 20px auto;
    color: rgba(209, 255, 255, 1);
-
 }
+
+
+header li{
+  font-family:'aileron';
+  font-size: 18px;
+  font-weight: bold;
+} 
 #space {
    width: 100%;
 }
