@@ -28,8 +28,8 @@ body {
 }
 
 @font-face {
-   font-family: aileron;
-   src: url(/css/fonts/Ailerons400.otf);
+   font-family: SF-Pro-Text;
+   src: url(/css/fonts/SF-Pro-Text-Bold.otf);
 }
 
 /* ------------------------------------------------------------------ */
