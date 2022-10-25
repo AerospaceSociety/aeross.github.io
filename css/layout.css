@@ -29,7 +29,7 @@ body {
 
 @font-face {
    font-family: aileron;
-   src: url(fonts/Ailerons_400.otf)
+   src: url(/css/fonts/Ailerons400.otf);
 }
 
 /* ------------------------------------------------------------------ */
