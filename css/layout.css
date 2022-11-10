@@ -27,10 +27,10 @@ body {
    overflow-x: hidden;
 }
 
-@font-face {
-   font-family: SF-Pro-Text;
-   src: url(/css/fonts/SF-Pro-Text-Bold.otf);
-}
+/* @font-face {
+   font-family: aileron;
+   src: url(/css/fonts/Ailerons400.otf);
+} */
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -56,7 +56,7 @@ header {
 
 
 header li{
-  font-family:'aileron';
+   font-family: 'Outfit', sans-serif;
   font-size: 18px;
   font-weight: bold;
 } 
