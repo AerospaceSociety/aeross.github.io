@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<link rel="stylesheet" href="index.css">
+
+<head>
+
+   <meta charset="utf-8">
+   <title>Aeross</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <link rel="icon" href="favicon.png">
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/magnific-popup.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+   <script src="js/modernizr.js"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+   <!-- Header
+   ================================================== -->
+   <!-- flashlight affect has been commented -->
+   <div id='w'>
+      <canvas id="space">
+      </canvas>
+      <div id="warp">
+
+         <header id="home">
+
+            <nav id="nav-wrap">
+
+               <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+               <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+               <ul id="nav" class="nav">
+                  <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+                  <li><a class="smoothscroll" href="#about">About</a></li>
+                  <li><a class="smoothscroll" href="#resume">Courses</a></li>
+                  <li><a class="smoothscroll" href="#achievements">Achievements</a></li>
+                  <li><a class="smoothscroll" href="#portfolio">Members</a></li>
+                  <!-- <li><a class="smoothscroll" href="#alumni">Alumni</a></li> -->
+                  <li><a class="smoothscroll" href="#faculty">Faculty</a></li>
+                  <li><a class="smoothscroll" href="#contact">Contact</a></li>
+                  <li><a href="https://celestecon.aeross.org/home" target=”_blank”>CelesteCon</a></li>
+                  <!-- <label class="switch">
+                  <input type="checkbox" id="togswitch" onclick="tog()">
+                  <span class="slider round"></span>
+              </label> -->
+               </ul> <!-- end #nav -->
+
+            </nav> <!-- end #nav-wrap -->
+
+            <div class="row banner">
+               <div class="banner-text">
+                  <img src="images/aeross.png" class="aeross_logo">
+                  <h3 style=" font-family: 'Outfit', sans-serif;">The sky is not the limit</h3>
+               </div>
+            </div>
+
+            <p class="scrolldown">
+               <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+            </p>
+
+         </header> <!-- Header End -->
+      </div>
+      <div id="splash">
+         <div class="anim">
+            <div id="loader">
+               <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+                  <defs>
+                     <filter id="f1" x="0" y="0">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                     </filter>
+                  </defs>
+                  <g id="airplane">
+                     <path fill="white" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                 h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                 c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                 c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                 c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                 C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+                  </g>
+                  <g id="shadow" transform="scale(.9)">
+                     <path fill="#000" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                   h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                   c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                   c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                   c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                   C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)"
+                        filter="url(#f1)" />
+                  </g>
+               </svg>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+
+
+   <!-- About Section
+   ================================================== -->
+   <section id="about">
+
+      <div class="row">
+
+         <div class="nine columns main-col">
+
+            <h2 style="font-size: 30px;">About Us</h2><br>
+
+            <p style="font-size:20px;">Aeross is the aerospace society of Delhi Public School RK Puram, New Delhi. We
+               are a group of outer space aficionados, science and engineering lovers, problem solvers, and technology
+               enthusiasts who prefer to build rather than watch. Formed in 2009, we have crossed countless milestones
+               in the past few years, and have an active community of 20+ members across grades 6-12, and are continuing
+               to push boundaries and increase our reach.<br><br>
+
+               Our members have a variety of talents - everything from 3D modelling to programming to scientific
+               research to technical innovation. They regularly take part in national and international level
+               competitions related to aerospace, aviation and other engineering related fields, and fair to say win
+               many of them. We don’t just restrict ourselves to competitions though. In the last few years we have also
+               started several internal projects, including our Cubesat initiative, our Summer Courses and soon, our
+               High Altitude Balloon project.
+
+            </p>
+
+
+            <div class="row">
+
+               <div class="twelve columns collapsed">
+
+
+                  <!-- portfolio-wrapper -->
+                  <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+
+                     <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+
+                           <img alt="" src="images/abme1.png">
+                           <div class="overlay">
+                              <div class="portfolio-item-meta">
+                                 <h5 style="font-size: 15px;">Hon’ble Vice-President Shri Venkaiah Naidu meeting </h5>
+                              </div>
+                           </div>
+
+
+
+                        </div>
+                     </div> <!-- item end -->
+
+                     <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+
+                           <img alt="" src="images/abme2.jpeg">
+                           <div class="overlay">
+                              <div class="portfolio-item-meta">
+                                 <h5 style="font-size: 15px;">ISSDC 2017-18 Winners</h5>
+                              </div>
+                           </div>
+
+
+
+                        </div>
+                     </div> <!-- item end -->
+                     <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+
+                           <img alt="" src="images/abme3.jpeg">
+                           <div class="overlay">
+                              <div class="portfolio-item-meta">
+                                 <h5 style="font-size: 15px;">Pete Conrad Scholars 2018-19</h5>
+                              </div>
+                           </div>
+
+
+
+                        </div>
+                     </div> <!-- item end -->
+                     <div class="columns portfolio-item">
+                        <div class="item-wrap">
+
+
+                           <img alt="" src="images/abme4.jpeg">
+                           <div class="overlay">
+                              <div class="portfolio-item-meta">
+                                 <h5 style="font-size: 15px;">Met PM Narendra Modi for taking his best wishes for ISSDC
+                                 </h5>
+                              </div>
+                           </div>
+
+
+
+                        </div>
+                     </div> <!-- item end -->
+
+                  </div> <!-- portfolio-wrapper end -->
+
+               </div>
+
+
+            </div> <!-- end row -->
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- About Section End-->
+
+
+   <!-- Courses Section
+   ================================================== -->
+   <section id="resume">
+
+      <!-- Education
+      ----------------------------------------------- -->
+      <div class="row education">
+
+         <div class="three columns header-col">
+            <h1 style="font-size: 30px;"><span>Courses</span></h1><br>
+         </div>
+
+         <div class="nine columns main-col">
+
+            <!-- <div class="row item">
+
+         ***      This is an archive of a blog created in 2020.
+
+               <div class="twelve columns">
+
+                  <h3>Aeross Teams emerge as the top two teams from India at Real World Design Challenge 2020</h3>
+                  <p class="info">Vinamr Sachdeva<span>&bull;</span> <em class="date">January 2020</em></p>
+
+                  <p>Two Aeross teams, Samaritan Aerospace and Peregrine Aerospace, emerge as the top two teams from
+                     India at Real World Design Challenge 2020 and have qualified for the finals They'll travel to
+                     Washington DC to compete with other finalists<span id="dots">...</span><span id="more"><br><br>
+
+                        Peregrine Aerospace members-<br>
+                        Akshit Kumar<br>
+                        Aryamun Das<br>
+                        Shashwat Raj<br>
+                        Siddharth Arya<br>
+                        Aryan Gulati<br>
+                        Rohit Sharma<br>
+                        Rohan Gupta<br><br>
+
+                        Samaritan Aerosapce members-<br>
+                        Aditya Swaminathan<br>
+                        Advitya Singhal<br>
+                        Karan Handa<br>
+                        Siddhansh Narang<br>
+                        Saumya Choudhary<br>
+                        Zohaib Ehtesam</span></p>
+
+                  <button onclick="myFunction()" id="myBtn">Read more</button>
+
+               </div>
+
+            </div> item end -->
+
+            <div class="row item">
+
+
+               <div class="twelve columns">
+                  <div class="reads">
+                     <div class="groups">
+                        <div class="grp">
+                           <h3>Edit Mode</h3>
+                           <p class="info">Ashvin Verma<span>&bull;</span> <em class="date">June 2019</em></p>
+                           <a href="https://docs.google.com/document/d/1AhiHhwLzGEc_hiJWFLP0P0sdK9UDMPj-CDqiPYnkCsQ/edit?usp=sharing"
+                              target=”_blank”><button class="read"
+                                 style="font-family: 'Outfit', sans-serif;">Read</button></a>
+                        </div>
+                        <div class="grp">
+                           <h3>Into Orbital Mechanics</h3>
+                           <p class="info">Om Gupta<span>&bull;</span> <em class="date">June 2019</em></p>
+                           <a href="https://docs.google.com/document/d/1ey4iYe7SLD0mll-BW0yX6Qy7ixHEUXsbSp_RE_BhWT8/edit?usp=sharing"
+                              target=”_blank”><button class="read"
+                                 style="font-family: 'Outfit', sans-serif;">Read</button></a>
+                        </div>
+                     </div>
+
+                     <div class="groups">
+                        <div class="grp">
+
+                           <h3>3D Course Prerequisite</h3>
+                           <p class="info">Ashvin Verma<span>&bull;</span> <em class="date">June 2019</em></p>
+                           <a href="https://docs.google.com/document/d/1JoxRN3h0H1Pl-E63yDouGlOc8lG5vfTX1Xwqc8OgMhM/edit?usp=sharing"
+                              target=”_blank”><button class="read"
+                                 style="font-family: 'Outfit', sans-serif;">Read</button></a>
+                        </div>
+                        <div class="grp">
+                           <h3>High Performance Engines</h3>
+                           <p class="info">Vinamr Sachdeva<span>&bull;</span> <em class="date">June 2019</em></p>
+                           <a href="https://docs.google.com/document/d/1BJGaDmWnY_dTcv5_tfz7QmuN5mKtR8tBlLn_VGtvYZY/edit?usp=sharing"
+                              target=”_blank”><button class="read"
+                                 style="font-family: 'Outfit', sans-serif;">Read</button></a>
+                        </div>
+                     </div>
+                     <div class="groups">
+                        <div class="grp">
+
+                           <h3>Building Efficient Engines</h3>
+                           <p class="info">Om Gupta<span>&bull;</span> <em class="date">June 2019</em></p>
+                           <a href="https://docs.google.com/document/d/1hU7XIpErLXVS-1_VNy4y5B6R5H2ohSIZCGdyxoJlldA/edit?usp=sharing"
+                              target=”_blank”><button class="read"
+                                 style="font-family: 'Outfit', sans-serif;">Read</button></a>
+                        </div>
+                        <div class="grp">
+
+                           <h3>Rockets and Propulsions</h3>
+                           <p class="info">Om Gupta<span>&bull;</span> <em class="date">June 2019</em></p>
+                           <a href="https://docs.google.com/document/d/18Uh8ZWSNpDuHH2idQSQYpGRRHKQF1FU-dpXhgLI9dhs/edit?usp=sharing"
+                              target=”_blank”><button class="read"
+                                 style="font-family: 'Outfit', sans-serif;">Read</button></a>
+                        </div>
+                     </div>
+                     <div class="groups">
+                        <div class="grp">
+
+                           <h3>The Gas Turbine Engine</h3>
+                           <p class="info">Om Gupta<span>&bull;</span> <em class="date">June 2019</em></p>
+                           <a href="https://docs.google.com/document/d/1G2YkQcIZxk8zGDQZDUrIEVIiFEv2ChOjOsu1b7t00xg/edit?usp=sharing"
+                              target=”_blank”><button class="read"
+                                 style="font-family: 'Outfit', sans-serif;">Read</button></a>
+                        </div>
+                        <div class="grp">
+
+                           <h3>Stability and Control</h3>
+                           <p class="info">Vinamr Sachdeva<span>&bull;</span> <em class="date">June 2019</em></p>
+                           <a href="https://docs.google.com/document/d/11HTsHM6LNJn5x5yGSiZKD9zjb59GF6wWB-RJJa8wIDQ/edit?usp=sharing"
+                              target=”_blank”><button class="read"
+                                 style="font-family: 'Outfit', sans-serif;">Read</button></a>
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+
+         </div> <!-- item end -->
+
+
+
+      </div> <!-- main-col end -->
+
+
+
+      </div> <!-- End Work -->
+
+
+
+   </section> <!-- Courses Section End-->
+
+   <!-- Achievement Section -->
+
+   <section id="achievements">
+
+
+      <div class="row">
+
+         <div class="nine columns main-col">
+
+            <h2 style="font-size: 30px;font-weight: bold;">Achievements </h2><br>
+
+            <div class="row">
+
+               <div class="twelve columns collapsed">
+                  <div style="overflow-x:auto;">
+                     <table>
+                        <!-- end -->
+                        <tr>
+                           <th>Competition</th>
+                           <th>Award(s)</th>
+                           <th>Year</th>
+                           <th>Project Name</th>
+                        </tr>
+                        <tr>
+                           <td>IEEE YESIST12 - Jr Einstein Challenge, IC</td>
+                           <td>Preliminary 2nd, Finalists</td>
+                           <td>2022</td>
+                           <td>The MedJet by Indus-Luft Dynamics</td>
+
+                        </tr>
+                        <tr>
+                           <td>International Science and Engineering Fair</td>
+                           <td>2nd Prize</td>
+                           <td>2022</td>
+                           <td>Flikcer</td>
+                        </tr>
+                        <tr>
+                           <td>Ames</td>
+                           <td>Grade 10 Second Prize</td>
+                           <td>2022</td>
+                           <td>Swastika 141919</td>
+                        </tr>
+                        <tr>
+                           <td>Ames</td>
+                           <td>Grade 8 First Prize</td>
+                           <td>2022</td>
+                           <td>Mellontikos</td>
+                        </tr>
+                        <tr>
+                           <td>Ames</td>
+                           <td>Grade 12 First Prize</td>
+                           <td>2022</td>
+                           <td>Anchises</td>
+                        </tr>
+                        <tr>
+                           <td>RWDC</td>
+                           <td>2nd Nationals</td>
+                           <td>2022</td>
+                           <td>Asteria by Team Asteria Origin Dynamics Incorporation</td>
+                        </tr>
+                        <tr>
+                           <td>RWDC</td>
+                           <td>1st Internationals, 1st Nationals</td>
+                           <td>2022</td>
+                           <td>C-25 Sigma by Indus-Luft Dynamics</td>
+                        </tr>
+                        <tr>
+                           <td>INSSDC</td>
+                           <td>Qualifying Round Second Runners up, Runners up</td>
+                           <td>2022</td>
+                           <td>Team Aurora</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Qualifying Round Indian Semifinalists, Runners up</td>
+                           <td>2022</td>
+                           <td>Team Borealis</td>
+                        </tr>
+                        <tr>
+                           <td>INSSDC</td>
+                           <td>Preliminary Quarterfinalist, Runners up</td>
+                           <td>2022</td>
+                           <td>Team Aurora</td>
+                        </tr>
+                        <tr>
+                           <td>INSSDC</td>
+                           <td>Preliminary First Runner up, Winners</td>
+                           <td>2022</td>
+                           <td>Team Borealis</td>
+
+                        </tr>
+                        <tr>
+                           <td>IRIS</td>
+                           <td>Grand Prize winner</td>
+                           <td>2022</td>
+                           <td>Flikcer</td>
+                        </tr>
+                        <tr>
+                           <td>MIT Academy of Engineering, EquilibriumATL Space Challenge</td>
+                           <td>1st Prize</td>
+                           <td>2022</td>
+                           <td>Skyblazers</td>
+                        </tr>
+                        <tr>
+                           <td>ATL Space Challenge</td>
+                           <td>1st in category (Leverage space)</td>
+                           <td>2021</td>
+                           <td>Aura</td>
+                        </tr>
+                        <tr>
+                           <td>ATL Space Challenge</td>
+                           <td>1st in category (Leverage space)</td>
+                           <td>2021</td>
+                           <td>Aura</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Scientist For a Day</td>
+                           <td>3rd Position</td>
+                           <td>2021</td>
+                           <td>Titania</td>
+                        </tr>
+                        <tr>
+                           <td>Misc Aerovaccine Techfest IIT Bombay</td>
+                           <td>Honourable Mention</td>
+                           <td>2021</td>
+                           <td>MediAir</td>
+                        </tr>
+                        <tr>
+                           <td>RWDC</td>
+                           <td>2nd intnational</td>
+                           <td>2021</td>
+                           <td>Astrodronics</td>
+                        </tr>
+                        <tr>
+                           <td>RWDC</td>
+                           <td>1st national</td>
+                           <td>2021</td>
+                           <td>Blazing Kryptonite </td>
+                        </tr>
+                        <tr>
+                           <td>Ames</td>
+                           <td>Honourable Mention</td>
+                           <td>2021</td>
+                           <td>Lumos</td>
+                        </tr>
+                        <tr>
+                           <td>Ames</td>
+                           <td>Honourable Mention</td>
+                           <td>2021</td>
+                           <td>Aevitas</td>
+                        </tr>
+                        <tr>
+                           <td>Ames</td>
+                           <td>1st Prize</td>
+                           <td>2021</td>
+                           <td>Esperer</td>
+                        </tr>
+                        <tr>
+                           <td>MIT Academy of Engineering, Equilibrium</td>
+                           <td>1st Prize</td>
+                           <td>2021</td>
+                           <td>Samaritan Aerospace Inc</td>
+                        </tr>
+                        <tr>
+                           <td>IITB Techfest</td>
+                           <td>Honourable Mention</td>
+                           <td>2021</td>
+                           <td>Aerovaccine, Mediair</td>
+                        </tr>
+                        <tr>
+                           <td>University of Arizona's Sustainable Planet Challenge</td>
+                           <td>2nd Prize</td>
+                           <td>2021</td>
+                           <td>MediAir</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Scientist For A Day</td>
+                           <td>2nd Prize</td>
+                           <td>2020</td>
+                           <td>Triton</td>
+                        </tr>
+                        <tr>
+                           <td>Embry-Riddle Aeronautical University Asia, Innovation Hangar</td>
+                           <td>Judges Choice Award</td>
+                           <td>2020</td>
+                           <td>MediAir</td>
+
+                        </tr>
+                        <tr>
+                           <td>Technovity Supernova</td>
+                           <td>1st Prize</td>
+                           <td>2020</td>
+                           <td>Space Mirrors</td>
+                        </tr>
+                        <tr>
+                           <td>Technovity Supernova</td>
+                           <td>3rd Prize (Senior Team)</td>
+                           <td>2020</td>
+                           <td>Project ODIN (Orbital Debris Immediate Neutralisation)</td>
+                        </tr>
+                        <tr>
+                           <td>IRIS</td>
+                           <td>Finalist</td>
+                           <td>2020</td>
+                           <td>Adaptive Normalization for Deep Learning Architectures</td>
+                        </tr>
+                        <tr>
+                           <td>RWDC</td>
+                           <td>National Runners-Up</td>
+                           <td>2020</td>
+                           <td>Falcon</td>
+                        </tr>
+                        <tr>
+                           <td>RWDC</td>
+                           <td>International Champion</td>
+                           <td>2020</td>
+                           <td>Drone-Acharya</td>
+                        </tr>
+                        <tr>
+                           <td>Ames</td>
+                           <td>Honourable Mention</td>
+                           <td>2020</td>
+                           <td>Anávo</td>
+                        </tr>
+                        <tr>
+                           <td>Ames</td>
+                           <td>1st Prize</td>
+                           <td>2020</td>
+                           <td>QuarkSpace</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>Power Pitch Award</td>
+                           <td>2019</td>
+                           <td>Nemaci by Aarogya Solutions</td>
+                        </tr>
+
+
+                        <tr>
+                           <td>Epilson</td>
+                           <td>1st Prize</td>
+                           <td>2019</td>
+                           <td>Avit</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>"Pete Conrad Scholars NASA Goddard Space Flight Center Technology Award"</td>
+                           <td>2019</td>
+                           <td>Enthuse by EnerX Systems</td>
+                        </tr>
+                        <tr>
+                           <td>ISSDC</td>
+                           <td>Invited Team, Runners Up</td>
+                           <td>2019</td>
+                           <td>Red Origin</td>
+                        </tr>
+                        <tr>
+                           <td>ISSDC</td>
+                           <td>Qualifying Finalist, Runners Up</td>
+                           <td>2019</td>
+                           <td>SpaceY</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary 1st Runner-Up, Winners</td>
+                           <td>2019</td>
+                           <td>SpaceY</td>
+                        </tr>
+
+
+
+                        <tr>
+                           <td>INSSDC</td>
+                           <td>Preliminary Quarterfinalist, Runners Up</td>
+                           <td>2018</td>
+                           <td>SpaceY</td>
+                        </tr>
+                        <tr>
+                           <td>INSSDC</td>
+                           <td>Preliminary Quarterfinalist, Runners Up</td>
+                           <td>2018</td>
+                           <td>Red Origin</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary 1st Runner-Up, Winners</td>
+                           <td>2018</td>
+                           <td>Oberth</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Semifinalist, Runner-Up</td>
+                           <td>2018</td>
+                           <td>Coriolis</td>
+                        </tr>
+
+                        <tr>
+                           <td>INSSDC</td>
+                           <td>Preliminary Quarterfinalist, Runner-Up</td>
+                           <td>2018</td>
+                           <td>Oberth</td>
+                        </tr>
+                        <tr>
+                           <td>INSSDC</td>
+                           <td>Preliminary Quarterfinalist, Runner-Up</td>
+                           <td>2018</td>
+                           <td>Coriolis</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>Finalist</td>
+                           <td>2018</td>
+                           <td>Ares by Asteria (Aerospace & Aviation)</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>Finalist</td>
+                           <td>2018</td>
+                           <td>Aironoy by EnerX</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challeng</td>
+                           <td>Finalist</td>
+                           <td>2018</td>
+                           <td>Innovation Tower by NOVA</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>Grade 11, Honorable Mention </td>
+                           <td>2018</td>
+                           <td>Paionia</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>1st Prize</td>
+                           <td>2018</td>
+                           <td>Paramount</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>Grade 8, 1st Prize, Large Team</td>
+                           <td>2018</td>
+                           <td>Anáptyxi</td>
+                        </tr>
+
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>Grade 11, 1st Prize, Large Team</td>
+                           <td>2018</td>
+                           <td>PSS</td>
+                        </tr>
+                        <tr>
+                           <td>Space Apps Challenge</td>
+                           <td>Runner-Up (Delhi) and Global Nominee</td>
+                           <td>2017</td>
+                           <td>Plavana by Team Chutney</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>Finalist</td>
+                           <td>2017</td>
+                           <td>Lunex by Taabir</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>Finalist</td>
+                           <td>2017</td>
+                           <td>INTEGERx42 by Impractical Engineers</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>Finalist</td>
+                           <td>2017</td>
+                           <td>Panacea by Sirona</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>Honorable Mention</td>
+                           <td>2017</td>
+                           <td>Aelonah</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>3rd Prize</td>
+                           <td>2017</td>
+                           <td>Asima</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>3rd Prize</td>
+                           <td>2017</td>
+                           <td>Project Taabir</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>3rd Prize</td>
+                           <td>2017</td>
+                           <td>Analysis of Space Cooperation Dynamics</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>3rd Prize</td>
+                           <td>2017</td>
+                           <td>Initium Novum</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>1st Prize</td>
+                           <td>2017</td>
+                           <td>Avanoa</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Semifinalist, Runner-Up</td>
+                           <td>2017</td>
+                           <td>Prelim: Aynah
+                              Final: Anconioh
+                              by Alexiares</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>Grand Prize</td>
+                           <td>2017</td>
+                           <td>Anastasi</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Semifinalist, Runner-Up</td>
+                           <td>2017</td>
+                           <td>Prelim: Aynah
+                              Final: Anconioh
+                              by Astra</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>2nd Place</td>
+                           <td>2016</td>
+                           <td>Novigo (9th Small)</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>Power Pitch Finalist, Summit Diplomat</td>
+                           <td>2016</td>
+                           <td>Zephyros</td>
+                        </tr>
+                        <tr>
+                           <td>Cassini Scientist for a Day Essay Contest</td>
+                           <td>National Winner (later all India prizes were rescinded, then not, weird)</td>
+                           <td>2016</td>
+                           <td>N/A</td>
+                        </tr>
+                        <tr>
+                           <td>Odysseus Contest</td>
+                           <td>Qualified to Regional Finals, top rank in non-EU category (could not attend finals)</td>
+                           <td>2016</td>
+                           <td>Zephyros</td>
+                        </tr>
+                        <tr>
+                           <td>ISSDC</td>
+                           <td>Preliminary Finalist, Runners-Up</td>
+                           <td>2016</td>
+                           <td>Prelim: Cassandras
+                              Final: Bradburyom</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>1st Place</td>
+                           <td>2016</td>
+                           <td>Corona (11th Large) by Aphadras</td>
+                        </tr>
+
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Semifinalist, Winners</td>
+                           <td>2016</td>
+                           <td>Prelim: Astoria
+                              Final: Cassandras
+                              by sum42</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>1st Place</td>
+                           <td>2015</td>
+                           <td>Hephaestus (12th Small)</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>3rd Place (attended ISDC 15, presented, interactions w Buzz Aldrin and Kip Thorne)</td>
+                           <td>2015</td>
+                           <td>Valhalla (11th Large)</td>
+                        </tr>
+                        <tr>
+                           <td>Conrad Challenge</td>
+                           <td>Pete Conrad Scholar (“Giant Leap to Mars”), Finalist (“Giant Leap to Mars”, “Aerospace
+                              and Aviation”), Summit Diplomat</td>
+                           <td>2015</td>
+                           <td>Asteroid Capture System by Albatross</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Semifinalist, Runner-Up</td>
+                           <td>2016</td>
+                           <td>Prelim: Astoria
+                              Final: Cassandras
+                              by Aphadras</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>Honourable Mention</td>
+                           <td>2014</td>
+                           <td>Abastat (11th Large)</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Runner-Up, Runner-Up</td>
+                           <td>2015</td>
+                           <td>Prelim: Aresam
+                              Final: Benevectoras</td>
+                        </tr>
+                        <tr>
+                           <td>ISSDC</td>
+                           <td>Preliminary Invited (Resub), Runner-Up</td>
+                           <td>2014</td>
+                           <td>Prelim: Columbiat
+                              Final: Balderol</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>2nd Place</td>
+                           <td>2013</td>
+                           <td>Indus (11th Small)</td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>3rd Place (attended ISDC 13, showcased poster, interactions w Dr. APJ Abdul Kalam)</td>
+                           <td>2013</td>
+                           <td>Airavat (11th Large)</td>
+                        </tr>
+
+                        <tr>
+                           <td>SHDC</td>
+                           <td>1st Place</td>
+                           <td>2013</td>
+                           <td>Mars Habitat Design by AeroMars Contractors</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Semifinalist, Runner-Up</td>
+                           <td>2014</td>
+                           <td>Prelim: Columbiat
+                              Final: Atlas</td>
+                        </tr>
+                        <tr>
+                           <td>SHDC</td>
+                           <td>1st Place</td>
+                           <td>2013</td>
+                           <td>Mars Habitat Design by AeroMars Contractors</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Prelim: Bellevistat
+                              Final: Arial</td>
+                           <td>2013</td>
+                           <td>Preliminary Semifinalist, Runner-Up</td>
+                        </tr>
+                        <tr>
+                           <td>SHDC</td>
+                           <td>4th Place</td>
+                           <td>2012</td>
+                           <td>Space Habitat-01 by The 42nd Frontier</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Semifinalist, Runner-Up</td>
+                           <td>2012</td>
+                           <td>Prelim: Aynah
+                              Final: Anconioh</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Semifinalist, Runner-Up</td>
+                           <td>2011</td>
+                           <td>Prelim: Astoria
+                              Final: Cassandras
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>NASA Ames</td>
+                           <td>Honourable Mention</td>
+                           <td>2010</td>
+                           <td>Prelims: Aresam</td>
+                        </tr>
+                        <tr>
+                           <td>ARSSDC</td>
+                           <td>Preliminary Runner-Up, Runner-Up</td>
+                           <td>2010</td>
+                           <td>Prelim: Aresam
+                              Final: Benevectoras
+                           </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+
+
+            </div> <!-- end row -->
+         </div> <!-- end .main-col -->
+
+      </div>
+
+   </section> <!-- Achievement Section End-->
+
+
+   <!-- Member Section
+   ================================================== -->
+   <section id="portfolio">
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+
+            <section id="resume">
+               <div class="row education">
+
+                  <div class="three columns header-col">
+                     <h1 style="font-size: 30px;"><span>Members</span></h1><br>
+                  </div>
+            </section>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+               <h2 style="font-weight: bold;">XII</h2><br>
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Aaron Barthwal, Class 12, Executive.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Aaron Barthwal</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">PRESIDENT</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Aadil F. Saiyed, Class 12, Executive.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Aadil F. Saiyed</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">PRESIDENT</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Samriddhi Mishra, Class 12, Executive.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Samriddhi Mishra</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">VICE PRESIDENT</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Swastik Agrawal, Class 12, Executive.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Swastik Agrawal</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">VICE PRESIDENT
+                        </h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Samannita Halder, Class 12, Executive.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Samannita Halder</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">DIRECTOR</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Aryan Goel, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:16px;">Aryan Goel</h6>
+                        <h6 style="color: black;  ;font-size:16px;font-weight: bold;">SENIOR MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="/members/Siddharth Mishra, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Siddharth Mishra</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               
+               
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Apurva Thakur, Class 12, Member.jpeg">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Apurva Thakur</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Tanmay Arora, Class 12, Executive.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Tanmay Arora</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Abhaya Trivedi, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Abhaya Trivedi</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Pradyun Rudra Patra, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color:black;  ;font-size:17px;">Pradyun Rudra Patra</h6>
+                        <h6 style="color:black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Harshita Bose, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Harshita Bose</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Arnav Makkar, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Arnav Makkar</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Vanshika Shah, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Vanshika Shah</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Divyansh Nayan, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Divyansh Nayan</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+            </div><!-- portfolio-wrapper end -->
+
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+               <h2 style="font-weight: bold;">XI</h2><br>
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Amartya Bagchi, Class 12, Senior Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Amartya Bagchi</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
+                     </div>
+
+                  </div>
+                  
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+                     <img alt="" src="members/Hashmeet Kaur, Grade 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Hashmeet Kaur</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Shaurya Gambhir, Class 12, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ; font-size:16px;">Shaurya Gambhir</h6>
+                        <h6 style="color: black;  ; font-size:16px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Krish Shah, Class 11, Member.jpg">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Krish Shah</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Mana Sharma, Class 11, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Mana Sharma</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Kushagra.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Kushagara Goel</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+             
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Kaamya Negi, Class 11, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Kaamyaa Negi</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+
+            </div>
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+               <h2 style="font-weight: bold;">X</h2><br>
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="/members/Ameya Aneja, Class 10, Member.jpeg">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Ameya Aneja</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="/members/Aryaa Dube, Class 10, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Aryaa Dube</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="/members/Ira Bhattacharya, Class 10, Member.jpg">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Ira Bhattacharya</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+
+            </div><!-- portfolio-wrapper end -->
+
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+               <h2 style="font-weight: bold;">IX</h2><br>
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Kahini Kashyap, Class 9, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Kahini Kashyap</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Aashna Verma, Class 10, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Aashna Verma</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Tanmaya Sharma, Class 10F, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Tanmaya Sharma</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Manvik.jpg">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Manvik Kumar</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="/members/Shravya Kumar, Class 10, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Shravya Kumar</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="members/Zonish.jpg">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Zonish Sidiqui</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="/members/Parika Talwar, Class 9, Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Parika Talwar</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+
+            </div><!-- portfolio-wrapper end -->
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+               <h2 style="font-weight: bold;">VIII</h2><br>
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="/members/Manaal Azhar, Class 8, Junior Member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black;font-size:17px;">Manaal Azhar</h6>
+                        <h6 style="color: black;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap">
+
+                     <img alt="" src="/members/Shriya Sawhney, Class 8, Junior member.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: black; ;font-size:17px;">Shriya Sawhney</h6>
+                        <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+            </div><!-- portfolio-wrapper end -->
+         </div>
+
+
+
+      </div> <!-- twelve columns end -->
+
+
+
+      </div> <!-- row End -->
+
+   </section> <!-- Member Section End-->
+
+  
+
+   <!-- Factulty Section -->
+   <section id="faculty">
+
+      <div class="row">
+
+         <div class="nine columns main-col">
+
+            <h2 style="font-size: 30px;font-weight: bold;">Faculty</h2><br>
+            <!-- portfolio-wrapper -->
+            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+               <h2 style="font-weight: bold;"></h2><br>
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap" style="background-color: transparent;">
+
+                     <img alt="" src="images/Principal.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center;">
+                        <h6 style="color: #fff; ;font-size:17px;">Ms. Padma Srinivasan</h6>
+                        <h6 style="color: #fff;  ;font-size:17px;font-weight: bold;">PRINCIPAL</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap" style="background-color: transparent;">
+
+                     <img alt="" src="/images/Ajay Goel Sir.png">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: #fff; ;font-size:17px;">Mr. Ajay Goel</h6>
+                        <h6 style="color: #fff;  ;font-size:17px;font-weight: bold;">TEACHER INCHARGE</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap" style="background-color: transparent;">
+
+                     <img alt="" src="/images/manojsir.png">
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: #fff; ;font-size:17px;">Mr. Manoj Arora</h6>
+                        <h6 style="color: #fff;  ;font-size:17px;font-weight: bold;">TEACHER INCHARGE</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+               <div class="columns portfolio-item" id="memberimg">
+                  <div class="item-wrap" style="background-color: transparent;">
+
+                     <img alt="" src="/images/teacherincharge2.jpeg">
+
+                     <div class="portfolio-item-meta" style="text-align: center">
+                        <h6 style="color: #fff; ;font-size:17px;">Mr. Sanchit Chauhan</h6>
+                        <h6 style="color: #fff;  ;font-size:17px;font-weight: bold;">TEACHER INCHARGE</h6>
+                     </div>
+
+                  </div>
+               </div> <!-- item end -->
+
+            </div><!-- portfolio-wrapper end -->
+         </div>
+   </section>
+   <!-- Faculty Section -->
+
+   <!-- Contact Section
+   ================================================== -->
+   <section id="contact" style="background-color: #fff;">
+      <!-- to be changed to #theothercolour for alum -->
+
+      <div class="row">
+
+         <div class="twelve columns collapsed">
+            <!-- <div class="two columns header-col">
+
+               <h2><span>Get In Touch.</span></h2>
+
+            </div> -->
+            <section id="resume" style="background-color: #fff;">
+
+     <!-- to be changed to #theothercolour for alum -->
+               <!-- Education
+               ----------------------------------------------- -->
+               <div class="row education">
+
+                  <div class="three columns header-col">
+                     <h1 style="font-size: 30px; color: #2B2B2B"><span>Contact</span></h1><br>
+                  </div>
+            </section>
+
+            <div class="ten columns" >
+               <h3 style="color:#2B2B2B ;">Contact us by dropping a mail at <a
+                     href="https://mail.google.com/mail/u/1/#inbox?compose=CllgCJNvNQjmCbzgKqzpTqdnHHNWFfXDsGlqncTQmJBzmfVhfNqcFbdKnbTwBmbHqRtrVbSpQRg"
+                     target="_blank"><span>aeross@dpsrkp.net</span></a><br><br>
+                  Address: <br>
+                  Delhi Public School RK Puram,<br>
+
+                  Sector 12, RK Puram,<br>
+
+                  New Delhi - 110029<br>
+                  <div class="row banner">
+                     <div class="banner-text">
+                        <ul class="social">
+                           <li><a href="https://www.facebook.com/aerossdpsrkp/" target="_blank" style="color:#FFFF;"><i
+                                    class="fa fa-facebook"></i></a></li>
+                           <li><a href="https://www.instagram.com/aerospace_society/" target="_blank" style="color:#FFFF;"><i
+                                    class="fa fa-instagram"></i></a></li>
+                           <li><a href="https://www.youtube.com/channel/UC7R-K_5I7W5RFnchzUX2vcw" target="_blank" style="color:#FFFF;"><i
+                                    class="fa fa-youtube"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.923687175679!2d77.1730752151547!3d28.572054193566327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1d9dd8443673%3A0xebe209b7ebe29809!2sKaifi%20Azmi%20Marg%2C%20KD%20Colony%2C%20Sector%2012%2C%20Rama%20Krishna%20Puram%2C%20New%20Delhi%2C%20Delhi%20110022!5e0!3m2!1sen!2sin!4v1660315814340!5m2!1sen!2sin"
+                     width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                     referrerpolicy="no-referrer-when-downgrade"></iframe>
+               </h3>
+
+
+
+
+            </div>
+
+         </div>
+      </div>
+   </section> <!-- Contact Section End-->
+
+   <section style="height: 35px;width: 100vw;">
+      <h4 style="color: white; display: flex; align-items: center;justify-content: center;">• © Made by Aeross • 2022
+      </h4>
+   </section>
+
+   <!-- Java Script
+   ================================================== -->
+   <script>
+
+      function myFunction() {
+         var dots = document.getElementById("dots");
+         var moreText = document.getElementById("more");
+         var btnText = document.getElementById("myBtn");
+
+         if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+         } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+         }
+      }
+
+      function tog() {
+         var a = document.getElementById("togswitch").checked;
+         if (a == false) {
+            var head = document.getElementsByTagName('HEAD')[0];
+
+
+            // Create new link Element
+            var link = document.createElement('link');
+
+            // set the attributes for link element
+            link.rel = 'stylesheet';
+
+            link.type = 'text/css';
+
+            link.href = 'css/flashlight.css';
+
+            // Append link element to HTML head
+            head.removeChild(head.lastElementChild);
+            // alert(head)
+         }
+         if (a == true) {
+            var head = document.getElementsByTagName('HEAD')[0];
+
+
+            // Create new link Element
+            var link = document.createElement('link');
+
+            // set the attributes for link element
+            link.rel = 'stylesheet';
+
+            link.type = 'text/css';
+
+            link.href = 'css/flashlight.css';
+
+            // Append link element to HTML head
+            head.appendChild(link);
+            // alert(head)
+         }
+      }
+
+
+
+   </script>
+
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+   <script src="index.js"></script>
+
+</body>
+
+</html>
