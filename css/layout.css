@@ -9,8 +9,8 @@
    a. General Styles
    b. Header Styles
    c. About Section
-   d. Resume Section
-   e. Portfolio Section
+   d. Courses Section
+   e. Members Section
    f. Call To Action Section
    g. Testimonials Section
    h. Contact Section
@@ -126,6 +126,7 @@ input:checked+.slider:before {
 }
 
 /* flashlight toggle */
+
 /* vertically center banner section */
 header:before {
    content: '';
@@ -421,47 +422,47 @@ ul#nav li.current a {
 
 
 /* ------------------------------------------------------------------ */
-/* d. Resume Section
+/* d. Courses Section
 /* ------------------------------------------------------------------ */
 
-#resume {
+#courses {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#resume a,
-#resume a:visited {
+#courses a,
+#courses a:visited {
    color: #DD7840;
 }
 
-#resume a:hover,
-#resume a:focus {
+#courses a:hover,
+#courses a:focus {
    color: #313131;
 }
 
-#resume h1 {
+#courses h1 {
    font-family: 'Outfit', sans-serif;
    letter-spacing: 1px;
 }
 
-#resume h1 span {
+#courses h1 span {
    border-bottom: 3px solid #DD7840;
    font-family: 'Outfit', sans-serif;
    font-weight:bold;
    padding-bottom: 6px;
 }
 
-#resume h3 {
+#courses h3 {
    font-family: 'Outfit', sans-serif;
 }
 
-#resume .header-col {
+#courses .header-col {
    padding-top: 9px;
 }
 
-#resume .main-col {
+#courses .main-col {
    padding-right: 10%;
 }
 
@@ -472,51 +473,51 @@ ul#nav li.current a {
    border-bottom: 1px solid #E8E8E8;
 }
 
-#resume .info {
+#courses .info {
    font: 16px/24px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
 }
 
-#resume .info span {
+#courses .info span {
    margin-right: 5px;
    margin-left: 5px;
 }
 
-#resume .date {
+#courses .date {
    font: 15px/24px 'Outfit', sans-serif;
    margin-top: 6px;
 }
 
 /* ------------------------------------------------------------------ */
-/* e. Portfolio Section
+/* e. Members Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
+#members {
    background: #fff;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
 }
 
-#portfolio h1 {
+#members h1 {
    font-family: 'Outfit', sans-serif;
    letter-spacing: 1px;
 }
 
-#portfolio h1 span {
+#members h1 span {
    border-bottom: 3px solid #DD7840;
    padding-bottom: 6px;
 }
 
 
-/* Portfolio Content */
-#portfolio-wrapper .columns {
+/* Members Content */
+#members-wrapper .columns {
    margin-bottom: 36px;
 }
 
-.portfolio-item .item-wrap {
+.members-item .item-wrap {
    background: #fff;
    overflow: hidden;
    position: relative;
@@ -528,13 +529,13 @@ ul#nav li.current a {
    transition: all 0.3s ease-in-out;
 }
 
-.portfolio-item .item-wrap a {
+.members-item .item-wrap a {
    display: block;
    cursor: pointer;
 }
 
 /* overlay */
-.portfolio-item .item-wrap .overlay {
+.members-item .item-wrap .overlay {
    position: absolute;
    left: 0;
    top: 0;
@@ -552,7 +553,7 @@ ul#nav li.current a {
    background: url(../images/overlay-bg.png) repeat;
 }
 
-.portfolio-item .item-wrap .link-icon {
+.members-item .item-wrap .link-icon {
    display: block;
    color: #fff;
    height: 30px;
@@ -577,41 +578,41 @@ ul#nav li.current a {
    margin-top: -15px;
 }
 
-.portfolio-item .item-wrap img {
+.members-item .item-wrap img {
    vertical-align: bottom;
 }
 
-#portfolio img {
+#members img {
    float: left;
    width: 200px;
    height: 200px;
    object-fit: cover;
 }
 
-.portfolio-item .portfolio-item-meta {
+.members-item .members-item-meta {
    padding: 18px
 }
 
-.portfolio-item .portfolio-item-meta h5 {
+.members-item .members-item-meta h5 {
 font-family: 'Outfit', sans-serif;
    color: #fff;
 }
 
-.portfolio-item .portfolio-item-meta p {
+.members-item .members-item-meta p {
    font: 12px/18px 'Outfit-light', sans-serif;
    color: #c6c7c7;
    margin-bottom: 0;
 }
 
 /* on hover */
-.portfolio-item:hover .overlay {
+.members-item:hover .overlay {
    background-color: black;
    opacity: 0.8;
    -moz-opacity: 1;
    filter: alpha(opacity=100);
 }
 
-.portfolio-item:hover .link-icon {
+.members-item:hover .link-icon {
    opacity: 1;
    -moz-opacity: 1;
    filter: alpha(opacity=100);
@@ -1330,85 +1331,7 @@ vertical-align: middle;
     }
     
 
-    /* airplane */
-    #splash {
-      background:black;
-      background-repeat: repeat-y;
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      animation: splash 3s ease-in;
-      animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
-    }
-    
-    #loader {
-      position: absolute;
-      left: 50%;
-      top: 0;
-      transform: translate(-50%,0);
-    }
-    
-    #loader:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      margin-left: -8px;
-      bottom: -170px;
-      width: 3px;
-      background: #fff;
-      background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-      height: 200px;
-    }
-    
-    #loader:before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      margin-left: 8px;
-      bottom: -190px;
-      width: 3px;
-      background: #000;
-      background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0) 100%);
-      height: 200px;
-    }
-    
-    #splash .anim {
-      height: 100%;
-      position: absolute;
-      left: 50%;
-      width: 100px;
-      transform: translate(-50%,100%);
-      animation: loader 4s linear;
-      animation-fill-mode: forwards;
-      -webkit-animation-fill-mode: forwards;
-    }
-    
-    @keyframes loader {
-      0% {
-        transform: translate(-50%,110%);
-      }
-      30% {
-        transform: translate(-50%,50%);
-      }
-      100% {
-        transform: translate(-50%,0%);
-      }
-    }
-    
-    @keyframes splash {
-      0% {
-        transform: translate(0%,0%);
-      }
-      50% {
-        transform: translate(0%,0%);
-      }
-      100% {
-        transform: translate(0%,-100%);
-      }
-    }
+
     
 /* alumni */
 
@@ -1486,3 +1409,5 @@ vertical-align: middle;
    width: 200px;
    object-fit: cover;
 }
+
+ 

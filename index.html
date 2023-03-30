@@ -3,6 +3,89 @@
 <link rel="stylesheet" href="index.css">
 
 <head>
+   <title>Loading Screen</title>
+   <style>
+     /* loading screen */
+     #splash {
+        background: black;
+        background-repeat: repeat-y;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        animation: splash 3s ease-in;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        z-index: 9999; /* make sure the loading screen is on top of everything */
+      }
+     
+     #loader {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,0);
+     }
+     
+     #loader:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        margin-left: -8px;
+        bottom: -170px;
+        width: 3px;
+        background: #fff;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+        height: 200px;
+     }
+     
+     #loader:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        margin-left: 8px;
+        bottom: -190px;
+        width: 3px;
+        background: #000;
+        background: linear-gradient(to bottom, rgba(0,0,0,.2) 0%, rgba(0,0,0,.2) 50%, rgba(0,0,0,0) 100%);
+        height: 200px;
+     }
+     
+     #splash .anim {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        width: 100px;
+        transform: translate(-50%,100%);
+        animation: loader 4s linear;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+     }
+     
+     @keyframes loader {
+        0% {
+          transform: translate(-50%,110%);
+        }
+        30% {
+          transform: translate(-50%,50%);
+        }
+        100% {
+          transform: translate(-50%,0%);
+        }
+     }
+     
+     @keyframes splash {
+        0% {
+          transform: translate(0%,0%);
+        }
+        50% {
+          transform: translate(0%,0%);
+        }
+        100% {
+          transform: translate(0%,-100%);
+        }
+     }
+   </style>
 
    <meta charset="utf-8">
    <title>Aeross</title>
@@ -24,7 +107,41 @@
 </head>
 
 <body>
+   
+   <!-- Loading Page------->
+   <div id="splash">
+      <div class="anim">
+         <div id="loader">
+            <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+               <defs>
+                  <filter id="f1" x="0" y="0">
+                     <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                  </filter>
+               </defs>
+               <g id="airplane">
+                  <path fill="white" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+              h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+              c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+              c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+              c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+              C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+               </g>
+               <g id="shadow" transform="scale(.9)">
+                  <path fill="black" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)"
+                     filter="url(#f1)" />
+               </g>
+            </svg>
+         </div>
+      </div>
+   </div>
 
+
+   
    <!-- Header
    ================================================== -->
    <!-- flashlight affect has been commented -->
@@ -43,9 +160,9 @@
                <ul id="nav" class="nav">
                   <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
                   <li><a class="smoothscroll" href="#about">About</a></li>
-                  <li><a class="smoothscroll" href="#resume">Courses</a></li>
+                  <li><a class="smoothscroll" href="#courses">Courses</a></li>
                   <li><a class="smoothscroll" href="#achievements">Achievements</a></li>
-                  <li><a class="smoothscroll" href="#portfolio">Members</a></li>
+                  <li><a class="smoothscroll" href="#members">Members</a></li>
                   <!-- <li><a class="smoothscroll" href="#alumni">Alumni</a></li> -->
                   <li><a class="smoothscroll" href="#faculty">Faculty</a></li>
                   <li><a class="smoothscroll" href="#contact">Contact</a></li>
@@ -71,36 +188,9 @@
 
          </header> <!-- Header End -->
       </div>
-      <div id="splash">
-         <div class="anim">
-            <div id="loader">
-               <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
-                  <defs>
-                     <filter id="f1" x="0" y="0">
-                        <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
-                     </filter>
-                  </defs>
-                  <g id="airplane">
-                     <path fill="white" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
-                 h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
-                 c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
-                 c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
-                 c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
-                 C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
-                  </g>
-                  <g id="shadow" transform="scale(.9)">
-                     <path fill="#000" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
-                   h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
-                   c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
-                   c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
-                   c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
-                   C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)"
-                        filter="url(#f1)" />
-                  </g>
-               </svg>
-            </div>
-         </div>
-      </div>
+      
+   </div>
+   <div id="loading-screen">
    </div>
 
 
@@ -118,18 +208,10 @@
 
             <h2 style="font-size: 30px;">About Us</h2><br>
 
-            <p style="font-size:20px;">Aeross is the aerospace society of Delhi Public School RK Puram, New Delhi. We
-               are a group of outer space aficionados, science and engineering lovers, problem solvers, and technology
-               enthusiasts who prefer to build rather than watch. Formed in 2009, we have crossed countless milestones
-               in the past few years, and have an active community of 20+ members across grades 6-12, and are continuing
-               to push boundaries and increase our reach.<br><br>
+            <p style="font-size:20px;">Aeross is the aerospace society of Delhi Public School R.K. Puram, which comprises a cohort of outer space and aviation aficionados. Our fervent passion for science and engineering fuels our constant pursuit of facing challenges head-on, preferring to build and create rather than just observe. Since our inception in 2009, we have reached numerous significant milestones, and to this day, our community continues to thrive with over 30 members ranging from grades 6-12. With an unwavering commitment to progress and broaden our horizons, we persistently strive towards surpassing limitations and expanding our outreach. 
 
-               Our members have a variety of talents - everything from 3D modelling to programming to scientific
-               research to technical innovation. They regularly take part in national and international level
-               competitions related to aerospace, aviation and other engineering related fields, and fair to say win
-               many of them. We don’t just restrict ourselves to competitions though. In the last few years we have also
-               started several internal projects, including our Cubesat initiative, our Summer Courses and soon, our
-               High Altitude Balloon project.
+              <br><br> Our members possess a diverse range of skills encompassing Computer-Aided Design (CAD), 3D modelling, programming, Computational Fluid Dynamics (CFD), animation and video editing. We frequently participate in national and international contests centred on aeronautics, space architecture and other engineering disciplines, and often emerge victorious. However, we do not limit ourselves to these competitions. Over the past few years, Aeross has launched several internal initiatives, such as our CubeSat program, Summer Courses, and forthcoming High Altitude Balloon project.
+               
 
             </p>
 
@@ -139,16 +221,16 @@
                <div class="twelve columns collapsed">
 
 
-                  <!-- portfolio-wrapper -->
-                  <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+                  <!-- members-wrapper -->
+                  <div id="members-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
 
-                     <div class="columns portfolio-item">
+                     <div class="columns members-item">
                         <div class="item-wrap">
 
 
                            <img alt="" src="images/abme1.png">
                            <div class="overlay">
-                              <div class="portfolio-item-meta">
+                              <div class="members-item-meta">
                                  <h5 style="font-size: 15px;">Hon’ble Vice-President Shri Venkaiah Naidu meeting </h5>
                               </div>
                            </div>
@@ -158,13 +240,13 @@
                         </div>
                      </div> <!-- item end -->
 
-                     <div class="columns portfolio-item">
+                     <div class="columns members-item">
                         <div class="item-wrap">
 
 
                            <img alt="" src="images/abme2.jpeg">
                            <div class="overlay">
-                              <div class="portfolio-item-meta">
+                              <div class="members-item-meta">
                                  <h5 style="font-size: 15px;">ISSDC 2017-18 Winners</h5>
                               </div>
                            </div>
@@ -173,13 +255,13 @@
 
                         </div>
                      </div> <!-- item end -->
-                     <div class="columns portfolio-item">
+                     <div class="columns members-item">
                         <div class="item-wrap">
 
 
                            <img alt="" src="images/abme3.jpeg">
                            <div class="overlay">
-                              <div class="portfolio-item-meta">
+                              <div class="members-item-meta">
                                  <h5 style="font-size: 15px;">Pete Conrad Scholars 2018-19</h5>
                               </div>
                            </div>
@@ -188,13 +270,13 @@
 
                         </div>
                      </div> <!-- item end -->
-                     <div class="columns portfolio-item">
+                     <div class="columns members-item">
                         <div class="item-wrap">
 
 
                            <img alt="" src="images/abme4.jpeg">
                            <div class="overlay">
-                              <div class="portfolio-item-meta">
+                              <div class="members-item-meta">
                                  <h5 style="font-size: 15px;">Met PM Narendra Modi for taking his best wishes for ISSDC
                                  </h5>
                               </div>
@@ -205,7 +287,7 @@
                         </div>
                      </div> <!-- item end -->
 
-                  </div> <!-- portfolio-wrapper end -->
+                  </div> <!-- members-wrapper end -->
 
                </div>
 
@@ -220,7 +302,7 @@
 
    <!-- Courses Section
    ================================================== -->
-   <section id="resume">
+   <section id="courses">
 
       <!-- Education
       ----------------------------------------------- -->
@@ -977,13 +1059,13 @@
 
    <!-- Member Section
    ================================================== -->
-   <section id="portfolio">
+   <section id="members">
 
       <div class="row">
 
          <div class="twelve columns collapsed">
 
-            <section id="resume">
+            <section id="courses">
                <div class="row education">
 
                   <div class="three columns header-col">
@@ -991,15 +1073,15 @@
                   </div>
             </section>
 
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <!-- members-wrapper -->
+            <div id="members-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
                <h2 style="font-weight: bold;">XII</h2><br>
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Aaron Barthwal, Class 12, Executive.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Aaron Barthwal</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">PRESIDENT</h6>
                      </div>
@@ -1007,24 +1089,24 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Aadil F. Saiyed, Class 12, Executive.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Aadil F. Saiyed</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">PRESIDENT</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Samriddhi Mishra, Class 12, Executive.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Samriddhi Mishra</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">VICE PRESIDENT</h6>
                      </div>
@@ -1032,12 +1114,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Swastik Agrawal, Class 12, Executive.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Swastik Agrawal</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">VICE PRESIDENT
                         </h6>
@@ -1048,12 +1130,12 @@
 
 
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Samannita Halder, Class 12, Executive.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Samannita Halder</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">DIRECTOR</h6>
                      </div>
@@ -1061,24 +1143,24 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Aryan Goel, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:16px;">Aryan Goel</h6>
                         <h6 style="color: black;  ;font-size:16px;font-weight: bold;">SENIOR MEMBER</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="/members/Siddharth Mishra, Class 12, Member.png">
+                     <img alt="" src="members/Siddharth Mishra, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Siddharth Mishra</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
                      </div>
@@ -1088,36 +1170,36 @@
 
                
                
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Apurva Thakur, Class 12, Member.jpeg">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Apurva Thakur</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">MEMBER</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Tanmay Arora, Class 12, Executive.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Tanmay Arora</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">MEMBER</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Abhaya Trivedi, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Abhaya Trivedi</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1125,36 +1207,36 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Pradyun Rudra Patra, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color:black;  ;font-size:17px;">Pradyun Rudra Patra</h6>
                         <h6 style="color:black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Harshita Bose, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Harshita Bose</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Arnav Makkar, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Arnav Makkar</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1162,12 +1244,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Vanshika Shah, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Vanshika Shah</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1176,12 +1258,12 @@
                </div> <!-- item end -->
 
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Divyansh Nayan, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Divyansh Nayan</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1189,16 +1271,16 @@
                   </div>
                </div> <!-- item end -->
 
-            </div><!-- portfolio-wrapper end -->
+            </div><!-- members-wrapper end -->
 
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <div id="members-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
                <h2 style="font-weight: bold;">XI</h2><br>
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Amartya Bagchi, Class 12, Senior Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Amartya Bagchi</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
                      </div>
@@ -1207,23 +1289,23 @@
                   
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
                      <img alt="" src="members/Hashmeet Kaur, Grade 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Hashmeet Kaur</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Shaurya Gambhir, Class 12, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Shaurya Gambhir</h6>
                         <h6 style="color: black;  ; font-size:16px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1232,12 +1314,12 @@
                </div> <!-- item end -->
 
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Krish Shah, Class 11, Member.jpg">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Krish Shah</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1245,12 +1327,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Mana Sharma, Class 11, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Mana Sharma</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1258,12 +1340,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Kushagra.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Kushagara Goel</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1273,12 +1355,12 @@
 
              
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Kaamya Negi, Class 11, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Kaamyaa Negi</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1289,16 +1371,16 @@
 
             </div>
 
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <!-- members-wrapper -->
+            <div id="members-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
                <h2 style="font-weight: bold;">X</h2><br>
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="/members/Ameya Aneja, Class 10, Member.jpeg">
+                     <img alt="" src="members/Ameya Aneja, Class 10, Member.jpeg">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Ameya Aneja</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1306,12 +1388,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="/members/Aryaa Dube, Class 10, Member.png">
+                     <img alt="" src="members/Aryaa Dube, Class 10, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Aryaa Dube</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1319,12 +1401,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="/members/Ira Bhattacharya, Class 10, Member.jpg">
+                     <img alt="" src="members/Ira Bhattacharya, Class 10, Member.jpg">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Ira Bhattacharya</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1333,17 +1415,17 @@
                </div> <!-- item end -->
 
 
-            </div><!-- portfolio-wrapper end -->
+            </div><!-- members-wrapper end -->
 
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <!-- members-wrapper -->
+            <div id="members-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
                <h2 style="font-weight: bold;">IX</h2><br>
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Kahini Kashyap, Class 9, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Kahini Kashyap</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
                      </div>
@@ -1351,12 +1433,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Aashna Verma, Class 10, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Aashna Verma</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">SENIOR MEMBER</h6>
                      </div>
@@ -1364,12 +1446,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Tanmaya Sharma, Class 10F, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Tanmaya Sharma</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1377,12 +1459,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Manvik.jpg">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Manvik Kumar</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1392,12 +1474,12 @@
 
                
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="/members/Shravya Kumar, Class 10, Member.png">
+                     <img alt="" src="members/Shravya Kumar, Class 10, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Shravya Kumar</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1405,12 +1487,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
                      <img alt="" src="members/Zonish.jpg">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Zonish Sidiqui</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1418,12 +1500,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="/members/Parika Talwar, Class 9, Member.png">
+                     <img alt="" src="members/Parika Talwar, Class 9, Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Parika Talwar</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1432,16 +1514,16 @@
                </div> <!-- item end -->
 
 
-            </div><!-- portfolio-wrapper end -->
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            </div><!-- members-wrapper end -->
+            <!-- members-wrapper -->
+            <div id="members-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
                <h2 style="font-weight: bold;">VIII</h2><br>
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="/members/Manaal Azhar, Class 8, Junior Member.png">
+                     <img alt="" src="members/Manaal Azhar, Class 8, Junior Member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black;font-size:17px;">Manaal Azhar</h6>
                         <h6 style="color: black;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1449,12 +1531,12 @@
                   </div>
                </div> <!-- item end -->
 
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="/members/Shriya Sawhney, Class 8, Junior member.png">
+                     <img alt="" src="members/Shriya Sawhney, Class 8, Junior member.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ;font-size:17px;">Shriya Sawhney</h6>
                         <h6 style="color: black;  ;font-size:17px;font-weight: bold;">MEMBER</h6>
                      </div>
@@ -1462,7 +1544,7 @@
                   </div>
                </div> <!-- item end -->
 
-            </div><!-- portfolio-wrapper end -->
+            </div><!-- members-wrapper end -->
          </div>
 
 
@@ -1485,50 +1567,50 @@
          <div class="nine columns main-col">
 
             <h2 style="font-size: 30px;font-weight: bold;">Faculty</h2><br>
-            <!-- portfolio-wrapper -->
-            <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
+            <!-- members-wrapper -->
+            <div id="members-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
                <h2 style="font-weight: bold;"></h2><br>
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap" style="background-color: transparent;">
 
                      <img alt="" src="images/Principal.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center;">
+                     <div class="members-item-meta" style="text-align: center;">
                         <h6 style="color: #fff; ;font-size:17px;">Ms. Padma Srinivasan</h6>
                         <h6 style="color: #fff;  ;font-size:17px;font-weight: bold;">PRINCIPAL</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap" style="background-color: transparent;">
 
-                     <img alt="" src="/images/Ajay Goel Sir.png">
+                     <img alt="" src="images/Ajay Goel Sir.png">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: #fff; ;font-size:17px;">Mr. Ajay Goel</h6>
                         <h6 style="color: #fff;  ;font-size:17px;font-weight: bold;">TEACHER INCHARGE</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap" style="background-color: transparent;">
 
-                     <img alt="" src="/images/manojsir.png">
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <img alt="" src="images/manojsir.png">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: #fff; ;font-size:17px;">Mr. Manoj Arora</h6>
                         <h6 style="color: #fff;  ;font-size:17px;font-weight: bold;">TEACHER INCHARGE</h6>
                      </div>
 
                   </div>
                </div> <!-- item end -->
-               <div class="columns portfolio-item" id="memberimg">
+               <div class="columns members-item" id="memberimg">
                   <div class="item-wrap" style="background-color: transparent;">
 
-                     <img alt="" src="/images/teacherincharge2.jpeg">
+                     <img alt="" src="images/teacherincharge2.jpeg">
 
-                     <div class="portfolio-item-meta" style="text-align: center">
+                     <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: #fff; ;font-size:17px;">Mr. Sanchit Chauhan</h6>
                         <h6 style="color: #fff;  ;font-size:17px;font-weight: bold;">TEACHER INCHARGE</h6>
                      </div>
@@ -1536,7 +1618,7 @@
                   </div>
                </div> <!-- item end -->
 
-            </div><!-- portfolio-wrapper end -->
+            </div><!-- members-wrapper end -->
          </div>
    </section>
    <!-- Faculty Section -->
