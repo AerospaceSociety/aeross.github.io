@@ -141,6 +141,19 @@
    </div>
 
 
+   <!-- Induction Pop Out 2023 -->
+   <div>
+   <div class = "popup">
+      <button id="close" style = "background-color:#DD7840;">&times;</button>
+      <h3>Oriention 2023</h3>
+      <img src="/images/orientation.png" style = "width:400px;" class = "noticepopup">
+      <!-- <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quidem.
+      </p> -->
+      <a href="https://forms.gle/DeiPzCAjJbmKxWiQ7" target=”_blank” style = "font-family: 'Outfit', sans-serif; background-color:#DD7840;">Register here!</a>
+  </div>
+</div>
+
    
    <!-- Header
    ================================================== -->
@@ -1548,7 +1561,7 @@
                <div class="columns members-item" id="memberimg">
                   <div class="item-wrap">
 
-                     <img alt="" src="members/Devashish.jpg">
+                     <img alt="" src="members/Devashish.jpeg">
 
                      <div class="members-item-meta" style="text-align: center">
                         <h6 style="color: black; ; font-size:16px;">Devashish Bindal</h6>
@@ -1780,7 +1793,20 @@
          }
       }
 
+      // Induction Pop out 
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display = "block";
+        },
+        1500 
+    )
+});
 
+
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+});
 
    </script>
 
