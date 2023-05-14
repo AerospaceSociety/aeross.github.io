@@ -1359,7 +1359,7 @@ vertical-align: middle;
 
 /* Notice Poster Pop Out */
 
-.popup{
+.popupalert{
    background-color: #ffffff;
    padding: 20px;
    position: absolute;
@@ -1374,7 +1374,7 @@ vertical-align: middle;
    text-align: center;
    z-index: 10;
 }
-.popup button{
+.popupalert button{
    display: block;
    margin:  0 0 20px auto;
    background-color: transparent;
@@ -1389,19 +1389,19 @@ vertical-align: middle;
    outline: none;
    cursor: pointer;
 }
-.popup h3{
+.popupalert h3{
   margin-top: -20px;
   font:'Outfit-bold', sans-serif;
 
 }
-.popup p{
+.popupalert p{
    font-size: 14px;
    font:'Outfit-bold', sans-serif;
    text-align: justify;
    margin: 20px 0;
    line-height: 25px;
 }
-.popup a{
+.popupalert a{
    display: block;
    width: 150px;
    position: relative;
@@ -1419,4 +1419,3 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-

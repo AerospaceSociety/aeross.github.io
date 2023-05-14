@@ -11,6 +11,7 @@
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {
 
+
    /* header styles
   ------------------------------------------------------------------ */
   header .banner-text h1 {
@@ -392,12 +393,10 @@
 
 }
 
-
-
   
  /* notice pop up */
 @media (max-width: 600px) {
-   .popup{
+   .popupalert{
       width: 300px;
    }
    .noticepopup{
