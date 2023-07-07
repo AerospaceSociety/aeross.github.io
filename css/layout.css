@@ -891,7 +891,7 @@ call-to-action .button {
    margin: 0 6px;
    display: inline-block;
    zoom: 1;
-   *display: inline;
+   display: inline;
 }
 
 .flex-control-paging li a {
@@ -1161,13 +1161,10 @@ th {
    margin-right: 15px;
    font-size: 20px;
 }
-
 /* Faculty */
 
-
 #faculty {
-   background:  #2B2B2B;
-   /* to be changed to #fff for alum */
+   background:  #fff;
    padding-top: 96px;
    padding-bottom: 66px;
    overflow: hidden;
@@ -1185,7 +1182,7 @@ th {
 
 #faculty h2 {
    font-family: 'Outfit', sans-serif;
-   color: #fff;
+   color: #2B2B2B;
    margin-bottom: 12px;
 }
 
@@ -1240,6 +1237,7 @@ th {
    width: 200px;
    object-fit: cover;
 }
+
 
 
 .groups{
@@ -1418,4 +1416,57 @@ vertical-align: middle;
 display: flex;
 align-items: center;
 justify-content: center;
+}
+
+
+/* alumni */
+
+#alumni {
+   background-color: #2B2B2B;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#alumni a,
+#alumni a:visited {
+   color: #fff;
+}
+
+#alumni a:hover,
+#alumni a:focus {
+   color: #DD7840;
+}
+
+#alumni h2 {
+   font-family: 'Outfit', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
+#alumni .main-col {
+   padding-right: 5%;
+}
+
+#albox {
+   background-color:#ededed;
+   border-radius: 12px;
+   box-sizing: border-box;
+   padding: 45px;
+   width: 30%;
+   color:#1e1e1e;
+   margin-right: 30px;
+
+}
+
+#albox h6 {
+   transition: 0.25s;
+}
+
+#albox:hover {
+   box-shadow: 2px 5px 5px 2px #383838;
+   border-radius: 12px;
+   background-color:#fff;
+   cursor: default;
+   color: rgb(17, 17, 17)
 }
