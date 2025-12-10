@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Aeross - Learn</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <link rel="icon" href="favicon.png">
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/remodel.css"> <!-- New Styles -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+   <script src="js/modernizr.js"></script>
+
+   <style>
+      /* Loading Screen (Kept consistency) */
+      #splash {
+         background: black;
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         animation: splash 1s ease-in forwards;
+         z-index: 9999;
+      }
+
+      @keyframes splash {
+         0% {
+            opacity: 1;
+            visibility: visible;
+         }
+
+         99% {
+            opacity: 0;
+            visibility: visible;
+         }
+
+         100% {
+            opacity: 0;
+            visibility: hidden;
+         }
+      }
+
+      body {
+         background: #0f1012;
+         color: #fff;
+         font-family: 'Outfit', sans-serif;
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- Loading Page -->
+   <div id="splash">
+      <div class="anim">
+         <div id="loader">
+            <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+               <defs>
+                  <filter id="f1" x="0" y="0">
+                     <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                  </filter>
+               </defs>
+               <g id="airplane">
+                  <path fill="white" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+              h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+              c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+              c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+              c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+              C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+               </g>
+               <g id="shadow" transform="scale(.9)">
+                  <path fill="black" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+               </g>
+               <g id="shadow" transform="scale(.9)">
+                  <path fill="black" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)"
+                     filter="url(#f1)" />
+               </g>
+            </svg>
+         </div>
+      </div>
+   </div>
+
+   <!-- Header -->
+   <header id="home" style="height: auto; min-height: 100px; background: transparent;">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li class="current"><a href="learn.html">Learn</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://celestecon.aeross.org/home" target="_blank">CelesteCon</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Learn Section -->
+   <div class="remodel-container">
+
+      <h1 class="section-title">Knowledge Base</h1>
+      <p style="text-align: center; margin-bottom: 60px; font-size: 1.5rem; color: #aaa;">Explore our curated resources
+         and course materials.</p>
+
+      <div class="remodel-grid">
+
+         <!-- Resource Card 1 -->
+         <div class="resource-card card-color-1">
+            <div>
+               <i class="fa fa-pencil" style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">Edit Mode</h3>
+               <p class="resource-description">Ashvin Verma &bull; June 2019</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1AhiHhwLzGEc_hiJWFLP0P0sdK9UDMPj-CDqiPYnkCsQ/edit?usp=sharing"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+         <!-- Resource Card 2 -->
+         <div class="resource-card card-color-2">
+            <div>
+               <i class="fa fa-globe" style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">Into Orbital Mechanics</h3>
+               <p class="resource-description">Om Gupta &bull; June 2019</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1ey4iYe7SLD0mll-BW0yX6Qy7ixHEUXsbSp_RE_BhWT8/edit?usp=sharing"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+         <!-- Resource Card 3 -->
+         <div class="resource-card card-color-3">
+            <div>
+               <i class="fa fa-cube" style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">3D Course Prerequisite</h3>
+               <p class="resource-description">Ashvin Verma &bull; June 2019</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1JoxRN3h0H1Pl-E63yDouGlOc8lG5vfTX1Xwqc8OgMhM/edit?usp=sharing"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+         <!-- Resource Card 4 -->
+         <div class="resource-card card-color-4">
+            <div>
+               <i class="fa fa-tachometer"
+                  style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">High Performance Engines</h3>
+               <p class="resource-description">Vinamr Sachdeva &bull; June 2019</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1BJGaDmWnY_dTcv5_tfz7QmuN5mKtR8tBlLn_VGtvYZY/edit?usp=sharing"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+         <!-- Resource Card 5 -->
+         <div class="resource-card card-color-5">
+            <div>
+               <i class="fa fa-cogs" style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">Building Efficient Engines</h3>
+               <p class="resource-description">Om Gupta &bull; June 2019</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1hU7XIpErLXVS-1_VNy4y5B6R5H2ohSIZCGdyxoJlldA/edit?usp=sharing"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+         <!-- Resource Card 6 -->
+         <div class="resource-card card-color-6">
+            <div>
+               <i class="fa fa-rocket" style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">Rockets and Propulsions</h3>
+               <p class="resource-description">Om Gupta &bull; June 2019</p>
+            </div>
+            <a href="https://docs.google.com/document/d/18Uh8ZWSNpDuHH2idQSQYpGRRHKQF1FU-dpXhgLI9dhs/edit?usp=sharing"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+         <!-- Resource Card 7 -->
+         <div class="resource-card card-color-1">
+            <div>
+               <i class="fa fa-fire" style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">The Gas Turbine Engine</h3>
+               <p class="resource-description">Om Gupta &bull; June 2019</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1G2YkQcIZxk8zGDQZDUrIEVIiFEv2ChOjOsu1b7t00xg/edit?usp=sharing"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+         <!-- Resource Card 8 -->
+         <div class="resource-card card-color-2">
+            <div>
+               <i class="fa fa-balance-scale"
+                  style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">Stability and Control</h3>
+               <p class="resource-description">Vinamr Sachdeva &bull; June 2019</p>
+            </div>
+            <a href="https://docs.google.com/document/d/11HTsHM6LNJn5x5yGSiZKD9zjb59GF6wWB-RJJa8wIDQ/edit?usp=sharing"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+         <!-- Resource Card 9 -->
+         <div class="resource-card card-color-3">
+            <div>
+               <i class="fa fa-paper-plane"
+                  style="font-size: 3rem; margin-bottom: 20px; color: rgba(255,255,255,0.2);"></i>
+               <h3 class="resource-title">Airfoils 101</h3>
+               <p class="resource-description">Aadil Faisal Saiyed &bull; April 2023</p>
+            </div>
+            <a href="https://docs.google.com/document/d/1A5sKVGlRh5t6NjlCSKbbBT6zaPB5mkcj5X7NeQpWP9Y/edit"
+               target="_blank" class="resource-link">Read Material</a>
+         </div>
+
+      </div>
+
+   </div>
+
+   <!-- Scripts (if needed) -->
+   <script src="js/jquery-1.10.2.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>

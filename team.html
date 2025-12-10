@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <title>Aeross - Team</title>
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <link rel="icon" href="favicon.png">
+   <link rel="stylesheet" href="css/default.css">
+   <link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/remodel.css"> <!-- New Styles -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+   <script src="js/modernizr.js"></script>
+
+   <style>
+      /* Loading Screen (Kept consistency) */
+      #splash {
+         background: black;
+         position: fixed;
+         left: 0;
+         top: 0;
+         width: 100%;
+         height: 100%;
+         animation: splash 1s ease-in forwards;
+         z-index: 9999;
+      }
+
+      @keyframes splash {
+         0% {
+            opacity: 1;
+            visibility: visible;
+         }
+
+         99% {
+            opacity: 0;
+            visibility: visible;
+         }
+
+         100% {
+            opacity: 0;
+            visibility: hidden;
+         }
+      }
+
+      body {
+         background: #0f1012;
+         color: #fff;
+         font-family: 'Outfit', sans-serif;
+      }
+   </style>
+</head>
+
+<body>
+
+   <!-- Loading Page -->
+   <div id="splash">
+      <div class="anim">
+         <div id="loader">
+            <svg version="1.1" width="60px" height="70px" viewBox="0 0 60 70">
+               <defs>
+                  <filter id="f1" x="0" y="0">
+                     <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                  </filter>
+               </defs>
+               <g id="airplane">
+                  <path fill="white" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+              h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+              c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+              c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+              c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+              C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(44,0) rotate(90 0 0)" />
+               </g>
+               <g id="shadow" transform="scale(.9)">
+                  <path fill="black" fill-opacity="0.3" d="M0.677,20.977l4.355,1.631c0.281,0.104,0.579,0.162,0.88,0.16l9.76-0.004L30.46,41.58c0.27,0.34,0.679,0.545,1.112,0.541
+                h1.87c0.992,0,1.676-0.992,1.322-1.918l-6.643-17.439l6.914,0.002l6.038,6.037c0.265,0.266,0.624,0.412,0.999,0.418l1.013-0.004
+                c1.004-0.002,1.684-1.012,1.312-1.938l-2.911-7.277l2.912-7.278c0.372-0.928-0.313-1.941-1.313-1.938h1.017
+                c-0.375,0-0.732,0.15-0.996,0.414l-6.039,6.039h-6.915l6.646-17.443c0.354-0.926-0.33-1.916-1.321-1.914l-1.87-0.004
+                c-0.439,0.004-0.843,0.203-1.112,0.543L15.677,17.24l-9.765-0.002c-0.3,0.002-0.597,0.055-0.879,0.16L0.678,19.03
+                C-0.225,19.36-0.228,20.637,0.677,20.977z" transform="translate(64,30) rotate(90 0 0)"
+                     filter="url(#f1)" />
+               </g>
+            </svg>
+         </div>
+      </div>
+   </div>
+
+   <!-- Header -->
+   <header id="home" style="height: auto; min-height: 100px; background: transparent;">
+      <nav id="nav-wrap">
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+         <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+         <ul id="nav" class="nav">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li class="current"><a href="team.html">Team</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="https://celestecon.aeross.org/home" target="_blank">CelesteCon</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Team Section -->
+   <div class="remodel-container">
+
+      <h1 class="section-title">Our Team</h1>
+
+      <!-- Alumni Link -->
+      <div style="text-align: center; margin-bottom: 40px;">
+         <a href="alumni.html" class="alumni-btn">View Alumni Archives</a>
+      </div>
+
+      <!-- Members XII -->
+      <h2 class="subsection-title">Class XII</h2>
+      <div class="remodel-grid">
+
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Aashna Verma, Class 10, Member.png" class="member-image" alt="Aashna Verma">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Aashna Verma</h3>
+               <p class="member-role">PRESIDENT</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Zonish.jpg" class="member-image" alt="Zonish Siddiqui">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Zonish Siddiqui</h3>
+               <p class="member-role">PRESIDENT</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Kahini Kashyap, Class 9, Member.png" class="member-image" alt="Kahini Kashyap">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Kahini Kashyap</h3>
+               <p class="member-role">HONOURARY PRESIDENT</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/XII- Shravya.jpg" class="member-image" alt="Shravya Kumar">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Shravya Kumar</h3>
+               <p class="member-role">SENIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Members XI -->
+      <h2 class="subsection-title">Class XI</h2>
+      <div class="remodel-grid">
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/XI- Anant.jpg" class="member-image" alt="Anant">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Anant</h3>
+               <p class="member-role">SENIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/XI- Ryaan.jpg" class="member-image" alt="Ryaan Namit Jain">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Ryaan Namit Jain</h3>
+               <p class="member-role">SENIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Blank.jpg" class="member-image" alt="Aarav Anand">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Aarav Anand</h3>
+               <p class="member-role">SENIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Manaal Azhar, Class 8, Junior Member.png" class="member-image" alt="Manaal Azhar">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Manaal Azhar</h3>
+               <p class="member-role">MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Blank.jpg" class="member-image" alt="Aamna Beg">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Aamna Beg</h3>
+               <p class="member-role">MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/XI- Manan.jpg" class="member-image" alt="Manan Lall">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Manan Lall</h3>
+               <p class="member-role">Ad-hoc</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/XI- Tarushi.jpg" class="member-image" alt="Tarushi Tomar">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Tarushi Tomar</h3>
+               <p class="member-role">Ad-Hoc</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/XI- Sid.jpg" class="member-image" alt="Siddhharth Srivastava">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Siddhharth Srivastava</h3>
+               <p class="member-role">Ad-Hoc</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Blank.jpg" class="member-image" alt="Farzooque Hasan">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Farzooque Hasan</h3>
+               <p class="member-role">Ad-Hoc</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Members X -->
+      <h2 class="subsection-title">Class X</h2>
+      <div class="remodel-grid">
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Blank.jpg" class="member-image" alt="Kiara Kapoor">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Kiara Kapoor</h3>
+               <p class="member-role">SENIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members/Anya.jpeg" class="member-image" alt="Anya Garg">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Anya Garg</h3>
+               <p class="member-role">MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/X- sakshi.jpg" class="member-image" alt="Sakshi Sinha">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Sakshi Sinha</h3>
+               <p class="member-role">MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/X- Showaiz.jpg" class="member-image" alt="Showaiz">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Showaiz</h3>
+               <p class="member-role">Ad-Hoc</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Members VIII -->
+      <h2 class="subsection-title">Class VIII</h2>
+      <div class="remodel-grid">
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/VIII- Pranav .jpg" class="member-image" alt="Pranav">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Pranav</h3>
+               <p class="member-role">JUNIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/VIII- Simona.png" class="member-image" alt="Simona Ghosh">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Simona Ghosh</h3>
+               <p class="member-role">JUNIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- Members VII -->
+      <h2 class="subsection-title">Class VII</h2>
+      <div class="remodel-grid">
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/VII- ranveer.jpg" class="member-image" alt="Ranveer">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Ranveer</h3>
+               <p class="member-role">JUNIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+         <div class="member-card">
+            <div class="member-image-wrapper">
+               <img src="members 25/VII- Akshay.jpeg" class="member-image" alt="Akshay">
+            </div>
+            <div class="member-info">
+               <h3 class="member-name">Akshay</h3>
+               <p class="member-role">JUNIOR MEMBER</p>
+               <div class="member-social">
+                  <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+   </div>
+
+   <!-- Scripts -->
+   <script src="js/jquery-1.10.2.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/jquery.flexslider.js"></script>
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>
+   <script src="js/magnific-popup.js"></script>
+   <script src="js/init.js"></script>
+
+</body>
+
+</html>

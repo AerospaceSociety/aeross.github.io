@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Aeross - Achievements</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+    <link rel="stylesheet" href="css/remodel.css"> <!-- New Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="js/modernizr.js"></script>
+
+    <style>
+        /* Loading Screen (Kept consistency) */
+        #splash {
+            background: black;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            animation: splash 1s ease-in forwards;
+            z-index: 9999;
+        }
+
+        @keyframes splash {
+            0% {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            99% {
+                opacity: 0;
+                visibility: visible;
+            }
+
+            100% {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+
+        body {
+            background: #0f1012;
+            color: #fff;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        /* Achievement Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        th,
+        td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.05);
+            font-weight: 700;
+            color: #ffd700;
+        }
+
+        tr:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loading Page -->
+    <div id="splash"></div>
+
+    <!-- Header -->
+    <header id="home" style="height: auto; min-height: 100px; background: transparent;">
+        <nav id="nav-wrap">
+            <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+            <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+            <ul id="nav" class="nav">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li class="current"><a href="achievements.html">Achievements</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="https://celestecon.aeross.org/home" target="_blank">CelesteCon</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Achievements Section -->
+    <div class="remodel-container">
+
+        <h1 class="section-title">Achievements</h1>
+        <p style="text-align: center; margin-bottom: 50px; font-size: 1.2rem; color: #888;">Celebrating our victories
+            and milestones.</p>
+
+        <div style="overflow-x:auto;">
+            <table class="achievements-table">
+                <!-- end -->
+                <tr>
+                    <th>Competition</th>
+                    <th>Award(s)</th>
+                    <th>Year</th>
+                    <th>Project Name</th>
+                </tr>
+                <tr>
+                    <td>IEEE YESIST12 - Jr Einstein Challenge, IC</td>
+                    <td>Preliminary 2nd, Finalists</td>
+                    <td>2022</td>
+                    <td>The MedJet by Indus-Luft Dynamics</td>
+
+                </tr>
+                <tr>
+                    <td>International Science and Engineering Fair</td>
+                    <td>2nd Prize</td>
+                    <td>2022</td>
+                    <td>Flikcer</td>
+                </tr>
+                <tr>
+                    <td>Ames</td>
+                    <td>Grade 10 Second Prize</td>
+                    <td>2022</td>
+                    <td>Swastika 141919</td>
+                </tr>
+                <tr>
+                    <td>Ames</td>
+                    <td>Grade 8 First Prize</td>
+                    <td>2022</td>
+                    <td>Mellontikos</td>
+                </tr>
+                <tr>
+                    <td>Ames</td>
+                    <td>Grade 12 First Prize</td>
+                    <td>2022</td>
+                    <td>Anchises</td>
+                </tr>
+                <tr>
+                    <td>RWDC</td>
+                    <td>2nd Nationals</td>
+                    <td>2022</td>
+                    <td>Asteria by Team Asteria Origin Dynamics Incorporation</td>
+                </tr>
+                <tr>
+                    <td>RWDC</td>
+                    <td>1st Internationals, 1st Nationals</td>
+                    <td>2022</td>
+                    <td>C-25 Sigma by Indus-Luft Dynamics</td>
+                </tr>
+                <tr>
+                    <td>INSSDC</td>
+                    <td>Qualifying Round Second Runners up, Runners up</td>
+                    <td>2022</td>
+                    <td>Team Aurora</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Qualifying Round Indian Semifinalists, Runners up</td>
+                    <td>2022</td>
+                    <td>Team Borealis</td>
+                </tr>
+                <tr>
+                    <td>INSSDC</td>
+                    <td>Preliminary Quarterfinalist, Runners up</td>
+                    <td>2022</td>
+                    <td>Team Aurora</td>
+                </tr>
+                <tr>
+                    <td>INSSDC</td>
+                    <td>Preliminary First Runner up, Winners</td>
+                    <td>2022</td>
+                    <td>Team Borealis</td>
+
+                </tr>
+                <tr>
+                    <td>IRIS</td>
+                    <td>Grand Prize winner</td>
+                    <td>2022</td>
+                    <td>Flikcer</td>
+                </tr>
+                <tr>
+                    <td>MIT Academy of Engineering, EquilibriumATL Space Challenge</td>
+                    <td>1st Prize</td>
+                    <td>2022</td>
+                    <td>Skyblazers</td>
+                </tr>
+                <tr>
+                    <td>ATL Space Challenge</td>
+                    <td>1st in category (Leverage space)</td>
+                    <td>2021</td>
+                    <td>Aura</td>
+                </tr>
+                <tr>
+                    <td>ATL Space Challenge</td>
+                    <td>1st in category (Leverage space)</td>
+                    <td>2021</td>
+                    <td>Aura</td>
+                </tr>
+                <tr>
+                    <td>NASA Scientist For a Day</td>
+                    <td>3rd Position</td>
+                    <td>2021</td>
+                    <td>Titania</td>
+                </tr>
+                <tr>
+                    <td>Misc Aerovaccine Techfest IIT Bombay</td>
+                    <td>Honourable Mention</td>
+                    <td>2021</td>
+                    <td>MediAir</td>
+                </tr>
+                <tr>
+                    <td>RWDC</td>
+                    <td>2nd intnational</td>
+                    <td>2021</td>
+                    <td>Astrodronics</td>
+                </tr>
+                <tr>
+                    <td>RWDC</td>
+                    <td>1st national</td>
+                    <td>2021</td>
+                    <td>Blazing Kryptonite </td>
+                </tr>
+                <tr>
+                    <td>Ames</td>
+                    <td>Honourable Mention</td>
+                    <td>2021</td>
+                    <td>Lumos</td>
+                </tr>
+                <tr>
+                    <td>Ames</td>
+                    <td>Honourable Mention</td>
+                    <td>2021</td>
+                    <td>Aevitas</td>
+                </tr>
+                <tr>
+                    <td>Ames</td>
+                    <td>1st Prize</td>
+                    <td>2021</td>
+                    <td>Esperer</td>
+                </tr>
+                <tr>
+                    <td>MIT Academy of Engineering, Equilibrium</td>
+                    <td>1st Prize</td>
+                    <td>2021</td>
+                    <td>Samaritan Aerospace Inc</td>
+                </tr>
+                <tr>
+                    <td>IITB Techfest</td>
+                    <td>Honourable Mention</td>
+                    <td>2021</td>
+                    <td>Aerovaccine, Mediair</td>
+                </tr>
+                <tr>
+                    <td>University of Arizona's Sustainable Planet Challenge</td>
+                    <td>2nd Prize</td>
+                    <td>2021</td>
+                    <td>MediAir</td>
+                </tr>
+                <tr>
+                    <td>NASA Scientist For A Day</td>
+                    <td>2nd Prize</td>
+                    <td>2020</td>
+                    <td>Triton</td>
+                </tr>
+                <tr>
+                    <td>Embry-Riddle Aeronautical University Asia, Innovation Hangar</td>
+                    <td>Judges Choice Award</td>
+                    <td>2020</td>
+                    <td>MediAir</td>
+
+                </tr>
+                <tr>
+                    <td>Technovity Supernova</td>
+                    <td>1st Prize</td>
+                    <td>2020</td>
+                    <td>Space Mirrors</td>
+                </tr>
+                <tr>
+                    <td>Technovity Supernova</td>
+                    <td>3rd Prize (Senior Team)</td>
+                    <td>2020</td>
+                    <td>Project ODIN (Orbital Debris Immediate Neutralisation)</td>
+                </tr>
+                <tr>
+                    <td>IRIS</td>
+                    <td>Finalist</td>
+                    <td>2020</td>
+                    <td>Adaptive Normalization for Deep Learning Architectures</td>
+                </tr>
+                <tr>
+                    <td>RWDC</td>
+                    <td>National Runners-Up</td>
+                    <td>2020</td>
+                    <td>Falcon</td>
+                </tr>
+                <tr>
+                    <td>RWDC</td>
+                    <td>International Champion</td>
+                    <td>2020</td>
+                    <td>Drone-Acharya</td>
+                </tr>
+                <tr>
+                    <td>Ames</td>
+                    <td>Honourable Mention</td>
+                    <td>2020</td>
+                    <td>Anávo</td>
+                </tr>
+                <tr>
+                    <td>Ames</td>
+                    <td>1st Prize</td>
+                    <td>2020</td>
+                    <td>QuarkSpace</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>Power Pitch Award</td>
+                    <td>2019</td>
+                    <td>Nemaci by Aarogya Solutions</td>
+                </tr>
+
+
+                <tr>
+                    <td>Epilson</td>
+                    <td>1st Prize</td>
+                    <td>2019</td>
+                    <td>Avit</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>"Pete Conrad Scholars NASA Goddard Space Flight Center Technology Award"</td>
+                    <td>2019</td>
+                    <td>Enthuse by EnerX Systems</td>
+                </tr>
+                <tr>
+                    <td>ISSDC</td>
+                    <td>Invited Team, Runners Up</td>
+                    <td>2019</td>
+                    <td>Red Origin</td>
+                </tr>
+                <tr>
+                    <td>ISSDC</td>
+                    <td>Qualifying Finalist, Runners Up</td>
+                    <td>2019</td>
+                    <td>SpaceY</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary 1st Runner-Up, Winners</td>
+                    <td>2019</td>
+                    <td>SpaceY</td>
+                </tr>
+
+
+
+                <tr>
+                    <td>INSSDC</td>
+                    <td>Preliminary Quarterfinalist, Runners Up</td>
+                    <td>2018</td>
+                    <td>SpaceY</td>
+                </tr>
+                <tr>
+                    <td>INSSDC</td>
+                    <td>Preliminary Quarterfinalist, Runners Up</td>
+                    <td>2018</td>
+                    <td>Red Origin</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary 1st Runner-Up, Winners</td>
+                    <td>2018</td>
+                    <td>Oberth</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Semifinalist, Runner-Up</td>
+                    <td>2018</td>
+                    <td>Coriolis</td>
+                </tr>
+
+                <tr>
+                    <td>INSSDC</td>
+                    <td>Preliminary Quarterfinalist, Runner-Up</td>
+                    <td>2018</td>
+                    <td>Oberth</td>
+                </tr>
+                <tr>
+                    <td>INSSDC</td>
+                    <td>Preliminary Quarterfinalist, Runner-Up</td>
+                    <td>2018</td>
+                    <td>Coriolis</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>Finalist</td>
+                    <td>2018</td>
+                    <td>Ares by Asteria (Aerospace & Aviation)</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>Finalist</td>
+                    <td>2018</td>
+                    <td>Aironoy by EnerX</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challeng</td>
+                    <td>Finalist</td>
+                    <td>2018</td>
+                    <td>Innovation Tower by NOVA</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>Grade 11, Honorable Mention </td>
+                    <td>2018</td>
+                    <td>Paionia</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>1st Prize</td>
+                    <td>2018</td>
+                    <td>Paramount</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>Grade 8, 1st Prize, Large Team</td>
+                    <td>2018</td>
+                    <td>Anáptyxi</td>
+                </tr>
+
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>Grade 11, 1st Prize, Large Team</td>
+                    <td>2018</td>
+                    <td>PSS</td>
+                </tr>
+                <tr>
+                    <td>Space Apps Challenge</td>
+                    <td>Runner-Up (Delhi) and Global Nominee</td>
+                    <td>2017</td>
+                    <td>Plavana by Team Chutney</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>Finalist</td>
+                    <td>2017</td>
+                    <td>Lunex by Taabir</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>Finalist</td>
+                    <td>2017</td>
+                    <td>INTEGERx42 by Impractical Engineers</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>Finalist</td>
+                    <td>2017</td>
+                    <td>Panacea by Sirona</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>Honorable Mention</td>
+                    <td>2017</td>
+                    <td>Aelonah</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>3rd Prize</td>
+                    <td>2017</td>
+                    <td>Asima</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>3rd Prize</td>
+                    <td>2017</td>
+                    <td>Project Taabir</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>3rd Prize</td>
+                    <td>2017</td>
+                    <td>Analysis of Space Cooperation Dynamics</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>3rd Prize</td>
+                    <td>2017</td>
+                    <td>Initium Novum</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>1st Prize</td>
+                    <td>2017</td>
+                    <td>Avanoa</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Semifinalist, Runner-Up</td>
+                    <td>2017</td>
+                    <td>Prelim: Aynah
+                        Final: Anconioh
+                        by Alexiares</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>Grand Prize</td>
+                    <td>2017</td>
+                    <td>Anastasi</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Semifinalist, Runner-Up</td>
+                    <td>2017</td>
+                    <td>Prelim: Aynah
+                        Final: Anconioh
+                        by Astra</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>2nd Place</td>
+                    <td>2016</td>
+                    <td>Novigo (9th Small)</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>Power Pitch Finalist, Summit Diplomat</td>
+                    <td>2016</td>
+                    <td>Zephyros</td>
+                </tr>
+                <tr>
+                    <td>Cassini Scientist for a Day Essay Contest</td>
+                    <td>National Winner (later all India prizes were rescinded, then not, weird)</td>
+                    <td>2016</td>
+                    <td>N/A</td>
+                </tr>
+                <tr>
+                    <td>Odysseus Contest</td>
+                    <td>Qualified to Regional Finals, top rank in non-EU category (could not attend finals)</td>
+                    <td>2016</td>
+                    <td>Zephyros</td>
+                </tr>
+                <tr>
+                    <td>ISSDC</td>
+                    <td>Preliminary Finalist, Runners-Up</td>
+                    <td>2016</td>
+                    <td>Prelim: Cassandras
+                        Final: Bradburyom</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>1st Place</td>
+                    <td>2016</td>
+                    <td>Corona (11th Large) by Aphadras</td>
+                </tr>
+
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Semifinalist, Winners</td>
+                    <td>2016</td>
+                    <td>Prelim: Astoria
+                        Final: Cassandras
+                        by sum42</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>1st Place</td>
+                    <td>2015</td>
+                    <td>Hephaestus (12th Small)</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>3rd Place (attended ISDC 15, presented, interactions w Buzz Aldrin and Kip Thorne)</td>
+                    <td>2015</td>
+                    <td>Valhalla (11th Large)</td>
+                </tr>
+                <tr>
+                    <td>Conrad Challenge</td>
+                    <td>Pete Conrad Scholar (“Giant Leap to Mars”), Finalist (“Giant Leap to Mars”, “Aerospace
+                        and Aviation”), Summit Diplomat</td>
+                    <td>2015</td>
+                    <td>Asteroid Capture System by Albatross</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Semifinalist, Runner-Up</td>
+                    <td>2016</td>
+                    <td>Prelim: Astoria
+                        Final: Cassandras
+                        by Aphadras</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>Honourable Mention</td>
+                    <td>2014</td>
+                    <td>Abastat (11th Large)</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Runner-Up, Runner-Up</td>
+                    <td>2015</td>
+                    <td>Prelim: Aresam
+                        Final: Benevectoras</td>
+                </tr>
+                <tr>
+                    <td>ISSDC</td>
+                    <td>Preliminary Invited (Resub), Runner-Up</td>
+                    <td>2014</td>
+                    <td>Prelim: Columbiat
+                        Final: Balderol</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>2nd Place</td>
+                    <td>2013</td>
+                    <td>Indus (11th Small)</td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>3rd Place (attended ISDC 13, showcased poster, interactions w Dr. APJ Abdul Kalam)</td>
+                    <td>2013</td>
+                    <td>Airavat (11th Large)</td>
+                </tr>
+
+                <tr>
+                    <td>SHDC</td>
+                    <td>1st Place</td>
+                    <td>2013</td>
+                    <td>Mars Habitat Design by AeroMars Contractors</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Semifinalist, Runner-Up</td>
+                    <td>2014</td>
+                    <td>Prelim: Columbiat
+                        Final: Atlas</td>
+                </tr>
+                <tr>
+                    <td>SHDC</td>
+                    <td>1st Place</td>
+                    <td>2013</td>
+                    <td>Mars Habitat Design by AeroMars Contractors</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Prelim: Bellevistat
+                        Final: Arial</td>
+                    <td>2013</td>
+                    <td>Preliminary Semifinalist, Runner-Up</td>
+                </tr>
+                <tr>
+                    <td>SHDC</td>
+                    <td>4th Place</td>
+                    <td>2012</td>
+                    <td>Space Habitat-01 by The 42nd Frontier</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Semifinalist, Runner-Up</td>
+                    <td>2012</td>
+                    <td>Prelim: Aynah
+                        Final: Anconioh</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Semifinalist, Runner-Up</td>
+                    <td>2011</td>
+                    <td>Prelim: Astoria
+                        Final: Cassandras
+                    </td>
+                </tr>
+                <tr>
+                    <td>NASA Ames</td>
+                    <td>Honourable Mention</td>
+                    <td>2010</td>
+                    <td>Prelims: Aresam</td>
+                </tr>
+                <tr>
+                    <td>ARSSDC</td>
+                    <td>Preliminary Runner-Up, Runner-Up</td>
+                    <td>2010</td>
+                    <td>Prelim: Aresam
+                        Final: Benevectoras
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <!-- Scripts (if needed) -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/magnific-popup.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>

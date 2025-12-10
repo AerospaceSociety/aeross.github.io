@@ -1,0 +1,422 @@
+/* Remodel Styles */
+
+/* General Layout */
+.remodel-container {
+    padding: 100px 5% 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 4rem;
+    /* Increased */
+    font-weight: 700;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+}
+
+.subsection-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #ffd700;
+    /* Gold/Yellow highlight */
+    font-family: 'Outfit', sans-serif;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 10px;
+}
+
+/* Grid Layout */
+.remodel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Fixed 3 columns */
+    gap: 30px;
+}
+
+/* Member Card */
+.member-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.member-image-wrapper {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    position: relative;
+}
+
+.member-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.member-card:hover .member-image {
+    transform: scale(1.05);
+}
+
+.member-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.member-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.member-role {
+    font-size: 0.9rem;
+    color: #aaa;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Alumni Section Specifics */
+.alumni-year-group {
+    margin-bottom: 60px;
+}
+
+.alumni-card {
+    min-height: auto;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.alumni-card .member-info {
+    padding: 30px 20px;
+}
+
+
+/* Learn Page - Resource Card (TechSyndicate Inspired) */
+.resource-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.resource-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+    opacity: 0.5;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.resource-title {
+    font-size: 2.2rem;
+    /* Increased */
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    z-index: 2;
+}
+
+.resource-description {
+    font-size: 1.3rem;
+    /* Increased */
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 25px;
+    line-height: 1.6;
+    z-index: 2;
+}
+
+.resource-link {
+    display: inline-block;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: fit-content;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.resource-link:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Card Colors - Accents */
+/* We will now use these as border-top/glow colors instead of full bg */
+.card-color-1 {
+    border-top: 3px solid #e63946;
+}
+
+.card-color-1:hover {
+    box-shadow: 0 10px 30px -10px rgba(230, 57, 70, 0.3);
+}
+
+.card-color-2 {
+    border-top: 3px solid #457b9d;
+}
+
+.card-color-2:hover {
+    box-shadow: 0 10px 30px -10px rgba(69, 123, 157, 0.3);
+}
+
+.card-color-3 {
+    border-top: 3px solid #2a9d8f;
+}
+
+.card-color-3:hover {
+    box-shadow: 0 10px 30px -10px rgba(42, 157, 143, 0.3);
+}
+
+.card-color-4 {
+    border-top: 3px solid #f4a261;
+}
+
+.card-color-4:hover {
+    box-shadow: 0 10px 30px -10px rgba(244, 162, 97, 0.3);
+}
+
+.card-color-5 {
+    border-top: 3px solid #9b2226;
+}
+
+.card-color-5:hover {
+    box-shadow: 0 10px 30px -10px rgba(155, 34, 38, 0.3);
+}
+
+.card-color-6 {
+    border-top: 3px solid #1d3557;
+}
+
+.card-color-6:hover {
+    box-shadow: 0 10px 30px -10px rgba(29, 53, 87, 0.3);
+}
+
+/* Helper for Transparent Subpage Header */
+.subpage-header {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Achievement Table Polish */
+.achievements-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+.achievements-table th {
+    font-size: 1.5rem;
+    /* Increased */
+    color: #ffd700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    border-bottom: 2px solid rgba(255, 215, 0, 0.2);
+}
+
+.achievements-table td {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 20px;
+    border: none;
+    font-size: 1.3rem;
+    /* Increased */
+}
+
+.achievements-table tr td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.achievements-table tr td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.achievements-table tr:hover td {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 900px) {
+    .remodel-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .remodel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Alumni Button - Improved */
+.alumni-btn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: transparent;
+    border: 2px solid #ffd700;
+    color: #ffd700;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.alumni-btn:hover {
+    background: #ffd700;
+    color: #000;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Social Bar (Absolute Positioned on Union) */
+.member-card {
+    /* Ensure relative positioning for absolute children */
+    position: relative;
+    /* Ensure there is space at bottom or overflow is handled?
+       Actually, if we want it on the "Union", we might overlap the bottom padding 
+       or hang slighly off. Let's position it at the bottom inside the padding. 
+    */
+    padding-bottom: 20px;
+}
+
+.member-social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 5px;
+    /* Minimal margin */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+.member-card:hover .member-social {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.member-social .social-icon {
+    width: 45px;
+    /* Increased */
+    height: 45px;
+    /* Increased */
+    font-size: 1.4rem;
+    /* Increased */
+    background: #0f1012;
+    /* Dark background to stand out against card */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.member-social .social-icon:hover {
+    background: #ffd700;
+    color: #000;
+    border-color: #ffd700;
+    transform: translateY(-2px);
+}
+
+/* Enhanced Typography & Spacing */
+.member-name {
+    font-size: 1.8rem;
+    /* Slightly adjusted */
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 2px;
+    /* Minimal margin */
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.member-role {
+    font-size: 1.3rem;
+    /* Increased from 1.0rem */
+    color: #ffd700;
+    font-weight: 700;
+    /* Increased weight slightly */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+
+/* Tighter Vertical Spacing to reduce height */
+.member-info {
+    padding: 15px 10px;
+    /* Reduced vertical padding */
+    text-align: center;
+}
+
+/* Card Glow Effect */
+.member-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    /* Keep social icons inside or let them float? 
+                         If "Union" implies partially out, explicit overflow usually cuts it.
+                         We'll keep it inside for cleanliness but at the very bottom. */
+}
+
+.member-card:hover {
+    border-color: rgba(255, 215, 0, 0.3);
+}
