@@ -3,7 +3,7 @@ window.aerossData = {
         {
             year: "Class XII",
             members: [
-                { name: "Aashna Verma", role: "PRESIDENT", image: "members/Aashna Verma, Class 10, Member.png", socials: ["#", "https://www.instagram.com/aashna_verma1/", "#"] },
+                { name: "Aashna Verma", role: "PRESIDENT", image: "members/Aashna Verma, Class 10, Member.png", socials: ["https://www.linkedin.com/in/aashna-verma-7b00b1255/", "https://www.instagram.com/aashna_verma1/", "mailto:vermaaashna06@gmail.com"] },
                 { name: "Zonish Siddiqui", role: "PRESIDENT", image: "members/Zonish.jpg", socials: ["#", "#", "#"] },
                 { name: "Kahini Kashyap", role: "HONOURARY PRESIDENT", image: "members/Kahini Kashyap, Class 9, Member.png", socials: ["#", "#", "#"] },
                 { name: "Shravya Kumar", role: "MEMBER", image: "members 25/XII- Shravya.jpg", socials: ["#", "#", "#"] }
@@ -26,9 +26,14 @@ window.aerossData = {
             year: "Class X",
             members: [
                 { name: "Kiara Kapoor", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
-                { name: "Anya Garg", role: "MEMBER", image: "members/Anya.jpeg", socials: ["#", "#", "#"] },
                 { name: "Sakshi Sinha", role: "MEMBER", image: "members 25/X- sakshi.jpg", socials: ["#", "#", "#"] },
                 { name: "Showaiz", role: "Ad-Hoc", image: "members 25/X- Showaiz.jpg", socials: ["#", "#", "#"] }
+            ]
+        },
+        {
+            year: "Class IX",
+            members: [
+                { name: "Anya Garg", role: "MEMBER", image: "members/Anya.jpeg", socials: ["#", "#", "#"] },
             ]
         },
         {
