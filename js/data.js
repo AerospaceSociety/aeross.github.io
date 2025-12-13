@@ -3,10 +3,10 @@ window.aerossData = {
         {
             year: "Class XII",
             members: [
-                { name: "Aashna Verma", role: "PRESIDENT", image: "members/Aashna Verma, Class 10, Member.png", socials: ["#", "#", "#"] },
+                { name: "Aashna Verma", role: "PRESIDENT", image: "members/Aashna Verma, Class 10, Member.png", socials: ["#", "https://www.instagram.com/aashna_verma1/", "#"] },
                 { name: "Zonish Siddiqui", role: "PRESIDENT", image: "members/Zonish.jpg", socials: ["#", "#", "#"] },
                 { name: "Kahini Kashyap", role: "HONOURARY PRESIDENT", image: "members/Kahini Kashyap, Class 9, Member.png", socials: ["#", "#", "#"] },
-                { name: "Shravya Kumar", role: "SENIOR MEMBER", image: "members 25/XII- Shravya.jpg", socials: ["#", "#", "#"] }
+                { name: "Shravya Kumar", role: "MEMBER", image: "members 25/XII- Shravya.jpg", socials: ["#", "#", "#"] }
             ]
         },
         {
@@ -15,7 +15,6 @@ window.aerossData = {
                 { name: "Anant", role: "SENIOR MEMBER", image: "members 25/XI- Anant.jpg", socials: ["#", "#", "#"] },
                 { name: "Ryaan Namit Jain", role: "SENIOR MEMBER", image: "members 25/XI- Ryaan.jpg", socials: ["#", "#", "#"] },
                 { name: "Aarav Anand", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
-                { name: "Manaal Azhar", role: "MEMBER", image: "members/Manaal Azhar, Class 8, Junior Member.png", socials: ["#", "#", "#"] },
                 { name: "Aamna Beg", role: "MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
                 { name: "Manan Lall", role: "Ad-hoc", image: "members 25/XI- Manan.jpg", socials: ["#", "#", "#"] },
                 { name: "Tarushi Tomar", role: "Ad-Hoc", image: "members 25/XI- Tarushi.jpg", socials: ["#", "#", "#"] },
