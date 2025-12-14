@@ -13,7 +13,7 @@ window.aerossData = {
             year: "Class XI",
             members: [
                 { name: "Anant", role: "SENIOR MEMBER", image: "members 25/XI- Anant.jpg", socials: ["#", "#", "#"] },
-                { name: "Ryaan Namit Jain", role: "SENIOR MEMBER", image: "members 25/XI- Ryaan.jpg", socials: ["#", "#", "#"] },
+                { name: "Ryaan Namit Jain", role: "SENIOR MEMBER", image: "members 25/XI- Ryaan.jpg", socials: ["#", "#", "mailto:ryaannamitjain@gmail.com"] },
                 { name: "Aarav Anand", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
                 { name: "Aamna Beg", role: "MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
                 { name: "Manan Lall", role: "Ad-hoc", image: "members 25/XI- Manan.jpg", socials: ["#", "#", "#"] },
@@ -26,7 +26,7 @@ window.aerossData = {
             year: "Class X",
             members: [
                 { name: "Kiara Kapoor", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
-                { name: "Sakshi Sinha", role: "MEMBER", image: "members 25/X- sakshi.jpg", socials: ["#", "#", "#"] },
+                { name: "Sakshi Sinha", role: "MEMBER", image: "members 25/X- sakshi.jpg", socials: ["#", "https://www.instagram.com/02ssakshi_?igsh=enc5ajBsM2x5bGF0", "mailto:sakshisinha05100@gmail.com"] },
                 { name: "Showaiz", role: "Ad-Hoc", image: "members 25/X- Showaiz.jpg", socials: ["#", "#", "#"] }
             ]
         },
