@@ -12,12 +12,12 @@ window.aerossData = {
         {
             year: "Class XI",
             members: [
-                { name: "Anant", role: "SENIOR MEMBER", image: "members 25/XI- Anant.jpg", socials: { email: "anant282009@gmail.com", discord:"https://www.discordapp.com/users/anant._." } },
+                { name: "Anant", role: "SENIOR MEMBER", image: "members 25/XI- Anant.jpg", socials: { email: "anant282009@gmail.com", discord: "https://www.discordapp.com/users/anant._." } },
                 { name: "Ryaan Namit Jain", role: "SENIOR MEMBER", image: "members 25/XI- Ryaan.jpg", socials: { linkedin: "", instagram: "https://wwww.instagram.com/ryaannamitjain_/", email: "mailto:ryaannamitjain@gmail.com" } },
                 { name: "Aarav Anand", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: { linkedin: "linkedin.com/in/aarav-anand-b24b36358", instagram: "instagram.com/aaravanandd", email: "mailto:aaravanand0301@gmail.com" } },
                 { name: "Aamna Beg", role: "MEMBER", image: "members/Blank.jpg", socials: { linkedin: "", instagram: "", email: "" } },
                 { name: "Manan Lall", role: "Ad-hoc", image: "members 25/XI- Manan.jpg", socials: { linkedin: "", instagram: "", email: "" } },
-                { name: "Tarushi Tomar", role: "Ad-Hoc", image: "members 25/XI- Tarushi.jpg", socials: { email: "mailto:tarushitomar0910@gmail.com", spotify: "open.spotify.com/user/314ipmyt62uzmajordk4fg3pwrmi", pinterest: "pinterest.com/t4rushi/", bereal:"https://bere.al/t4rushiiiiii"  } },
+                { name: "Tarushi Tomar", role: "Ad-Hoc", image: "members 25/XI-Tarushi.jpg", socials: { email: "mailto:tarushitomar0910@gmail.com", spotify: "open.spotify.com/user/314ipmyt62uzmajordk4fg3pwrmi", pinterest: "pinterest.com/t4rushi/", bereal: "https://bere.al/t4rushiiiiii" } },
                 { name: "Siddhharth Srivastava", role: "Ad-Hoc", image: "members 25/XI- Sid.jpg", socials: { instagram: "https://www.instagram.com/do_i._.care", email: "mailto:siddharth2539@gmail.com", spotify: "https://open.spotify.com/user/cfcfh4aukeny6nrgjnvdl7nu0?si=Y90W8fZtR-yacn1kFN4xRA", github: "https://github.com/upbeat25yt" } },
                 { name: "Farzooque Hasan", role: "Ad-Hoc", image: "members/Blank.jpg", socials: { github: "https://github.com/FarzooqueHasan", email: "mailto:farzooquehasan@gmail.com" } }
             ]
