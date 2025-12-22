@@ -17,11 +17,46 @@ function renderTeam() {
     const data = window.aerossData.team;
     let html = '';
 
+    const socialIcons = {
+        linkedin: 'fa-linkedin',
+        instagram: 'fa-instagram',
+        email: 'fa-envelope',
+        github: 'fa-github',
+        spotify: 'fa-spotify',
+        behance: 'fa-behance',
+        website: 'fa-globe',
+        youtube: 'fa-youtube-play',
+        snapchat: 'fa-snapchat-ghost',
+        pinterest: 'fa-pinterest',
+        discord: 'fa-globe',
+        bereal: 'fa-globe'
+    };
+
     data.forEach(group => {
         html += `<h2 class="subsection-title">${group.year}</h2>`;
         html += `<div class="remodel-grid">`;
 
         group.members.forEach(member => {
+            let socialHtml = '';
+
+            // Handle both Array (old) and Object (new) formats for smooth migration
+            if (Array.isArray(member.socials)) {
+                // Old format: [linkedin, instagram, email] with possible '#'
+                const [linkedin, instagram, email] = member.socials;
+                if (linkedin && linkedin !== '#') socialHtml += `<a href="${linkedin}" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a>`;
+                if (instagram && instagram !== '#') socialHtml += `<a href="${instagram}" class="social-icon" target="_blank"><i class="fa fa-instagram"></i></a>`;
+                if (email && email !== '#') socialHtml += `<a href="${email}" class="social-icon"><i class="fa fa-envelope"></i></a>`;
+            } else if (typeof member.socials === 'object') {
+                // New format: { key: url }
+                for (const [key, url] of Object.entries(member.socials)) {
+                    if (url && url !== '#' && socialIcons[key.toLowerCase()]) {
+                        // Emails should generally not have target="_blank", but others should
+                        const targetLine = key.toLowerCase() === 'email' ? '' : 'target="_blank"';
+                        socialHtml += `<a href="${url}" class="social-icon" ${targetLine}><i class="fa ${socialIcons[key.toLowerCase()]}"></i></a>`;
+                    }
+                }
+            }
+
             html += `
             <div class="member-card">
                 <div class="member-image-wrapper">
@@ -31,9 +66,7 @@ function renderTeam() {
                     <h3 class="member-name">${member.name}</h3>
                     <p class="member-role">${member.role}</p>
                     <div class="member-social">
-                        ${member.socials[0] !== '#' ? `<a href="${member.socials[0]}" class="social-icon"><i class="fa fa-linkedin"></i></a>` : `<a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>`}
-                        ${member.socials[1] !== '#' ? `<a href="${member.socials[1]}" class="social-icon"><i class="fa fa-instagram"></i></a>` : `<a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>`}
-                        ${member.socials[2] !== '#' ? `<a href="${member.socials[2]}" class="social-icon"><i class="fa fa-envelope"></i></a>` : `<a href="#" class="social-icon"><i class="fa fa-envelope"></i></a>`}
+                        ${socialHtml}
                     </div>
                 </div>
             </div>`;

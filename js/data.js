@@ -3,51 +3,52 @@ window.aerossData = {
         {
             year: "Class XII",
             members: [
-                { name: "Aashna Verma", role: "PRESIDENT", image: "members/Aashna Verma, Class 10, Member.png", socials: ["https://www.linkedin.com/in/aashna-verma-7b00b1255/", "https://www.instagram.com/aashna_verma1/", "mailto:vermaaashna06@gmail.com"] },
-                { name: "Zonish Siddiqui", role: "PRESIDENT", image: "members/Zonish.jpg", socials: ["#", "#", "#"] },
-                { name: "Kahini Kashyap", role: "HONOURARY PRESIDENT", image: "members/Kahini Kashyap, Class 9, Member.png", socials: ["#", "#", "#"] },
-                { name: "Shravya Kumar", role: "MEMBER", image: "members 25/XII- Shravya.jpg", socials: ["#", "#", "#"] }
+                { name: "Aashna Verma", role: "PRESIDENT", image: "members/Aashna Verma, Class 10, Member.png", socials: { linkedin: "https://www.linkedin.com/in/aashna-verma-7b00b1255/", instagram: "https://www.instagram.com/aashna_verma1/", email: "mailto:vermaaashna06@gmail.com" } },
+                { name: "Zonish Siddiqui", role: "PRESIDENT", image: "members/Zonish.jpg", socials: { linkedin: "https://www.linkedin.com/in/zonish-siddiqui-b463a5350/", instagram: "https://www.instagram.com/zon.ish_notcatfish/", email: "" } },
+                { name: "Kahini Kashyap", role: "HONOURARY PRESIDENT", image: "members/Kahini Kashyap, Class 9, Member.png", socials: { linkedin: "https://www.linkedin.com/in/kahini-kashyap-6a2367344/", instagram: "https://www.instagram.com/kahinikashyap/", email: "" } },
+                { name: "Shravya Kumar", role: "MEMBER", image: "members 25/XII- Shravya.jpg", socials: { linkedin: "", instagram: "", email: "" } }
             ]
         },
         {
             year: "Class XI",
             members: [
-                { name: "Anant", role: "SENIOR MEMBER", image: "members 25/XI- Anant.jpg", socials: ["#", "#", "#"] },
-                { name: "Ryaan Namit Jain", role: "SENIOR MEMBER", image: "members 25/XI- Ryaan.jpg", socials: ["#", "#", "mailto:ryaannamitjain@gmail.com"] },
-                { name: "Aarav Anand", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
-                { name: "Aamna Beg", role: "MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
-                { name: "Manan Lall", role: "Ad-hoc", image: "members 25/XI- Manan.jpg", socials: ["#", "#", "#"] },
-                { name: "Tarushi Tomar", role: "Ad-Hoc", image: "members 25/XI- Tarushi.jpg", socials: ["#", "#", "#"] },
-                { name: "Siddhharth Srivastava", role: "Ad-Hoc", image: "members 25/XI- Sid.jpg", socials: ["#", "#", "#"] },
-                { name: "Farzooque Hasan", role: "Ad-Hoc", image: "members/Blank.jpg", socials: ["#", "#", "#"] }
+                { name: "Anant", role: "SENIOR MEMBER", image: "members 25/XI- Anant.jpg", socials: { email: "anant282009@gmail.com", discord:"https://www.discordapp.com/users/anant._." } },
+                { name: "Ryaan Namit Jain", role: "SENIOR MEMBER", image: "members 25/XI- Ryaan.jpg", socials: { linkedin: "", instagram: "https://wwww.instagram.com/ryaannamitjain_/", email: "mailto:ryaannamitjain@gmail.com" } },
+                { name: "Aarav Anand", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: { linkedin: "linkedin.com/in/aarav-anand-b24b36358", instagram: "instagram.com/aaravanandd", email: "mailto:aaravanand0301@gmail.com" } },
+                { name: "Aamna Beg", role: "MEMBER", image: "members/Blank.jpg", socials: { linkedin: "", instagram: "", email: "" } },
+                { name: "Manan Lall", role: "Ad-hoc", image: "members 25/XI- Manan.jpg", socials: { linkedin: "", instagram: "", email: "" } },
+                { name: "Tarushi Tomar", role: "Ad-Hoc", image: "members 25/XI- Tarushi.jpg", socials: { email: "mailto:tarushitomar0910@gmail.com", spotify: "open.spotify.com/user/314ipmyt62uzmajordk4fg3pwrmi", pinterest: "pinterest.com/t4rushi/", bereal:"https://bere.al/t4rushiiiiii"  } },
+                { name: "Siddhharth Srivastava", role: "Ad-Hoc", image: "members 25/XI- Sid.jpg", socials: { instagram: "https://www.instagram.com/do_i._.care", email: "mailto:siddharth2539@gmail.com", spotify: "https://open.spotify.com/user/cfcfh4aukeny6nrgjnvdl7nu0?si=Y90W8fZtR-yacn1kFN4xRA", github: "https://github.com/upbeat25yt" } },
+                { name: "Farzooque Hasan", role: "Ad-Hoc", image: "members/Blank.jpg", socials: { github: "https://github.com/FarzooqueHasan", email: "mailto:farzooquehasan@gmail.com" } }
             ]
         },
         {
             year: "Class X",
             members: [
-                { name: "Kiara Kapoor", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: ["#", "#", "#"] },
-                { name: "Sakshi Sinha", role: "MEMBER", image: "members 25/X- sakshi.jpg", socials: ["#", "https://www.instagram.com/02ssakshi_?igsh=enc5ajBsM2x5bGF0", "mailto:sakshisinha05100@gmail.com"] },
-                { name: "Showaiz", role: "Ad-Hoc", image: "members 25/X- Showaiz.jpg", socials: ["#", "#", "#"] }
+                { name: "Kiara Kapoor", role: "SENIOR MEMBER", image: "members 25/X- Kiara.jpeg", socials: { linkedin: "linkedin.com/in/kiara-kapoor-a1ab43394", email: "kiarakapoorlibra@gmail.com", github: "https://github.com/KapoorKiara" } },
+                { name: "Sakshi Sinha", role: "MEMBER", image: "members 25/X- sakshi.jpg", socials: { instagram: "https://www.instagram.com/02ssakshi_?igsh=enc5ajBsM2x5bGF0", email: "mailto:sakshisinha05100@gmail.com" } },
+                { name: "Manya Gupta", role: "MEMBER", image: "members 25/X-Manya.jpg", socials: { linkedin: "", instagram: "", email: "" } },
+                { name: "Showaiz", role: "Ad-Hoc", image: "members 25/X- Showaiz.jpg", socials: { linkedin: "", instagram: "", email: "" } }
             ]
         },
         {
             year: "Class IX",
             members: [
-                { name: "Anya Garg", role: "MEMBER", image: "members/Anya.jpeg", socials: ["#", "#", "#"] },
+                { name: "Anya Garg", role: "MEMBER", image: "members/Anya.jpeg", socials: { linkedin: "", instagram: "", email: "" } },
             ]
         },
         {
             year: "Class VIII",
             members: [
-                { name: "Pranav", role: "JUNIOR MEMBER", image: "members 25/VIII- Pranav .jpg", socials: ["#", "#", "#"] },
-                { name: "Simona Ghosh", role: "JUNIOR MEMBER", image: "members 25/VIII- Simona.png", socials: ["#", "#", "#"] }
+                { name: "Pranav", role: "JUNIOR MEMBER", image: "members 25/VIII- Pranav .jpg", socials: { instagram: "https://www.instagram.com/meli.noe4603", email: "mailto:pranavprabha483@gmail.com" } },
+                { name: "Simona Ghosh", role: "JUNIOR MEMBER", image: "members 25/VIII- Simona.png", socials: { linkedin: "", instagram: "", email: "" } }
             ]
         },
         {
             year: "Class VII",
             members: [
-                { name: "Ranveer", role: "JUNIOR MEMBER", image: "members 25/VII- ranveer.jpg", socials: ["#", "#", "#"] },
-                { name: "Akshay", role: "JUNIOR MEMBER", image: "members 25/VII- Akshay.jpeg", socials: ["#", "#", "#"] }
+                { name: "Ranveer Kalra", role: "JUNIOR MEMBER", image: "members 25/VII- ranveer.jpg", socials: { email: "mailto:ranveerkalra516@gmail.com", spotify: "https://open.spotify.com/user/31wfk7a3r4ziwidwckk3e3zb7vgm" } },
+                { name: "Akshay", role: "JUNIOR MEMBER", image: "members 25/VII- Akshay.jpeg", socials: { linkedin: "", instagram: "", email: "" } }
             ]
         }
     ],
