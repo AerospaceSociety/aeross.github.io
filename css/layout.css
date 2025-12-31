@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
 =====================================================================
 *   Ceevee v1.0 Layout Stylesheet
@@ -1470,3 +1471,1477 @@ justify-content: center;
    cursor: default;
    color: rgb(17, 17, 17)
 }
+=======
+/*
+=====================================================================
+*   Ceevee v1.0 Layout Stylesheet
+*   url: styleshout.com
+*   03-18-2014
+=====================================================================
+   TOC:
+   a. General Styles
+   b. Header Styles
+   c. About Section
+   d. Courses Section
+   e. Members Section
+   f. Call To Action Section
+   g. Testimonials Section
+   h. Contact Section
+   i. Footer
+===================================================================== */
+
+/* ------------------------------------------------------------------ */
+/* a. General Styles
+/* ------------------------------------------------------------------ */
+
+body {
+   background: rgba(0, 10, 20, 1);
+   overflow-x: hidden;
+}
+
+/* @font-face {
+   font-family: aileron;
+   src: url(/css/fonts/Ailerons400.otf);
+} */
+
+/* ------------------------------------------------------------------ */
+/* b. Header Styles
+/* ------------------------------------------------------------------ */
+
+header {
+   height: 800px;
+   min-height: 500px;
+   width: 100%;
+   -webkit-background-size: cover !important;
+   text-align: center;
+   overflow: hidden;
+   background-size: cover !important;
+   image-rendering: pixelated;
+   position: absolute;
+   z-index: 9;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin: 20px auto;
+   color: rgba(209, 255, 255, 1);
+}
+
+
+header li{
+   font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+} 
+#space {
+   width: 100%;
+}
+
+
+/* Rounded sliders */
+.slider.round {
+   border-radius: 34px;
+}
+
+.slider.round:before {
+   border-radius: 50%;
+}
+
+/* flashlight toggle */
+
+/* vertically center banner section */
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+header .banner-text {
+   width: 100%;
+}
+
+header .banner-text h1 {
+   
+   color: #fff;
+   letter-spacing: -2px;
+   margin: 0 auto 18px auto;
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+}
+
+header .banner-text h3 {
+   font: 18px/1.9em 'librebaskerville-regular', serif;
+   color: #A8A8A8;
+   margin: 0 auto;
+   width: 70%;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+
+header .banner-text h3 span,
+header .banner-text h3 a {
+   color: #fff;
+}
+
+header .banner-text hr {
+   width: 60%;
+   margin: 18px auto 24px auto;
+   border-color: #2F2D2E;
+   border-color: rgba(150, 150, 150, .1);
+}
+
+.aeross_logo{
+   width: 750px;
+}
+/* header social links */
+header .social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+
+header .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+
+header .social li a {
+   color: #fff;
+}
+
+header .social li a:hover {
+   color: #DD7840;
+}
+
+#contact .social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+}
+
+#contact .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+
+#contact .social li a {
+   color: #313131;
+}
+
+#contact .social li a:hover {
+   color: #DD7840;
+}
+
+#contact:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+
+#contact .banner {
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   padding-bottom: 30px;
+}
+
+/* scrolldown link */
+header .scrolldown a {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   margin-left: -29px;
+   color: #fff;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: #fff;
+   border-radius: 100%;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+
+header .scrolldown a:hover {
+   color: #DD7840;
+}
+
+/* primary navigation
+--------------------------------------------------------------------- */
+
+
+
+.read {
+   width: 300px;
+}
+
+#moreText {
+
+   /* Display nothing for the element */
+   display: none;
+}
+
+#nav-wrap ul,
+#nav-wrap li,
+#nav-wrap a {
+   margin: 0;
+   padding: 0;
+   border: none;
+   outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 16px 'Outfit-bold', sans-serif;
+   width: 100%;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   padding: 10px;
+   top: 0;
+   font-weight: bold;
+}
+
+.opaque {
+   background-color: #333;
+}
+
+/* hide toggle button */
+#nav-wrap>a.mobile-btn {
+   display: none;
+}
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+
+   /* center align the menu */
+   text-align: center;
+}
+
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+   text-decoration: none;
+   text-align: left;
+   color: #fff;
+
+   -webkit-transition: color .2s ease-in-out;
+   -moz-transition: color .2s ease-in-out;
+   -o-transition: color .2s ease-in-out;
+   -ms-transition: color .2s ease-in-out;
+   transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active {
+   background-color: transparent !important;
+}
+
+ul#nav li.current a {
+   color: #DD7840;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* c. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+   background: #2B2B2B;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+   font-family: 'Outfit', sans-serif;
+}
+
+#about a,
+#about a:visited {
+   color: #fff;
+}
+
+#about a:hover,
+#about a:focus {
+   color: #DD7840;
+}
+
+#about h2 {
+   font-family: 'Outfit', sans-serif;
+   color: #fff;
+   font-weight: bold;
+}
+
+#about p {
+   line-height: 30px;
+
+   color: #999999;
+}
+
+#about .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#about .contact-details {
+   width: 41.66667%;
+}
+
+#about .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+
+#about .main-col {
+   padding-right: 5%;
+}
+
+#about .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+
+#about .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+
+#about .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* d. Courses Section
+/* ------------------------------------------------------------------ */
+
+#courses {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#courses a,
+#courses a:visited {
+   color: #DD7840;
+}
+
+#courses a:hover,
+#courses a:focus {
+   color: #313131;
+}
+
+#courses h1 {
+   font-family: 'Outfit', sans-serif;
+   letter-spacing: 1px;
+}
+
+#courses h1 span {
+   border-bottom: 3px solid #DD7840;
+   font-family: 'Outfit', sans-serif;
+   font-weight:bold;
+   padding-bottom: 6px;
+}
+
+#courses h3 {
+   font-family: 'Outfit', sans-serif;
+}
+
+#courses .header-col {
+   padding-top: 9px;
+}
+
+#courses .main-col {
+   padding-right: 10%;
+}
+
+.education,
+.work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+
+#courses .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+
+#courses .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+
+#courses .date {
+   font: 15px/24px 'Outfit', sans-serif;
+   margin-top: 6px;
+}
+
+/* ------------------------------------------------------------------ */
+/* e. Members Section
+/* ------------------------------------------------------------------ */
+
+#members {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#members h1 {
+   font-family: 'Outfit', sans-serif;
+   letter-spacing: 1px;
+}
+
+#members h1 span {
+   border-bottom: 3px solid #DD7840;
+   padding-bottom: 6px;
+}
+
+
+/* Members Content */
+#members-wrapper .columns {
+   margin-bottom: 36px;
+}
+
+.members-item .item-wrap {
+   background: #fff;
+   overflow: hidden;
+   position: relative;
+
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   -ms-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+}
+
+.members-item .item-wrap a {
+   display: block;
+   cursor: pointer;
+}
+
+/* overlay */
+.members-item .item-wrap .overlay {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   -moz-opacity: 0;
+   filter: alpha(opacity=0);
+
+   -webkit-transition: opacity 0.3s ease-in-out;
+   -moz-transition: opacity 0.3s ease-in-out;
+   -o-transition: opacity 0.3s ease-in-out;
+   transition: opacity 0.3s ease-in-out;
+
+   background: url(../images/overlay-bg.png) repeat;
+}
+
+.members-item .item-wrap .link-icon {
+   display: block;
+   color: #fff;
+   height: 30px;
+   width: 30px;
+   font-size: 18px;
+   line-height: 30px;
+   text-align: center;
+
+   opacity: 0;
+   -moz-opacity: 0;
+   filter: alpha(opacity=0);
+
+   -webkit-transition: opacity 0.3s ease-in-out;
+   -moz-transition: opacity 0.3s ease-in-out;
+   -o-transition: opacity 0.3s ease-in-out;
+   transition: opacity 0.3s ease-in-out;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -15px;
+   margin-top: -15px;
+}
+
+.members-item .item-wrap img {
+   vertical-align: bottom;
+}
+
+#members img {
+   float: left;
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+}
+
+.members-item .members-item-meta {
+   padding: 18px
+}
+
+.members-item .members-item-meta h5 {
+font-family: 'Outfit', sans-serif;
+   color: #fff;
+}
+
+.members-item .members-item-meta p {
+   font: 12px/18px 'Outfit-light', sans-serif;
+   color: #c6c7c7;
+   margin-bottom: 0;
+}
+
+/* on hover */
+.members-item:hover .overlay {
+   background-color: black;
+   opacity: 0.8;
+   -moz-opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+.members-item:hover .link-icon {
+   opacity: 1;
+   -moz-opacity: 1;
+   filter: alpha(opacity=100);
+}
+
+/* popup modal */
+.popup-modal {
+   max-width: 550px;
+   background: #fff;
+   position: relative;
+   margin: 0 auto;
+}
+
+.popup-modal .description-box {
+   padding: 12px 36px 18px 36px;
+}
+
+.popup-modal .description-box h4 {
+   font: 15px/24px 'Outfit-bold', sans-serif;
+   margin-bottom: 12px;
+   color: #111;
+}
+
+.popup-modal .description-box p {
+   font: 14px/24px 'Outfit-regular', sans-serif;
+   color: #A1A1A1;
+   margin-bottom: 12px;
+}
+
+.popup-modal .description-box .categories {
+   font: 11px/21px 'Outfit-light', sans-serif;
+   color: #A1A1A1;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   display: block;
+   text-align: left;
+}
+
+.popup-modal .description-box .categories i {
+   margin-right: 8px;
+}
+
+.popup-modal .link-box {
+   padding: 18px 36px;
+   background: #111;
+   text-align: left;
+}
+
+.popup-modal .link-box a {
+   color: #fff;
+   font: 11px/21px 'Outfit-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   cursor: pointer;
+}
+
+.popup-modal a:hover {
+   color: #00CCCC;
+}
+
+.popup-modal a.popup-modal-dismiss {
+   margin-left: 24px;
+}
+
+
+/* fadein/fadeout effect for modal popup
+/* ------------------------------------------------------------------ */
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content .popup-modal {
+   opacity: 0;
+   -webkit-transition: all 200ms ease-in-out;
+   -moz-transition: all 200ms ease-in-out;
+   -o-transition: all 200ms ease-in-out;
+   -ms-transition: all 200ms ease-in-out;
+   transition: all 200ms ease-in-out;
+}
+
+/* content fadein */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content .popup-modal {
+   opacity: 1;
+}
+
+/* content fadeout */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
+   opacity: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* f. Call To Action Section
+/* ------------------------------------------------------------------ */
+
+#call-to-action {
+   background: #212121;
+   padding-top: 66px;
+   padding-bottom: 48px;
+}
+
+#call-to-action h1 {
+   font: 18px/24px 'Outfit-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #fff;
+}
+
+#call-to-action h1 span {
+   display: none;
+}
+
+#call-to-action .header-col h1:before {
+   font-family: 'FontAwesome';
+   content: "\f0ac";
+   padding-right: 10px;
+   font-size: 72px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #fff;
+}
+
+#call-to-action .action {
+   margin-top: 12px;
+}
+
+#call-to-action h2 {
+   font: 28px/36px 'Outfit-bold', sans-serif;
+   color: #EBEEEE;
+   margin-bottom: 6px;
+}
+
+#call-to-action h2 a {
+   color: inherit;
+}
+
+#call-to-action p {
+   color: #636363;
+   font-size: 17px;
+}
+
+/*#
+call-to-action .button {
+	color:#fff;
+   background: ;
+}
+*/
+#call-to-action .button:hover,
+#call-to-action .button:active {
+   background: #FFFFFF;
+   color: #0D0D0D;
+}
+
+#call-to-action p span {
+   font-family: 'Outfit-semibold', sans-serif;
+   color: #D8D8D8;
+}
+
+/* ------------------------------------------------------------------
+/* g. Testimonials
+/* ------------------------------------------------------------------ */
+
+#testimonials {
+   background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
+   background-size: cover !important;
+   -webkit-background-size: cover !important;
+   background-attachment: fixed;
+
+   position: relative;
+   min-height: 200px;
+   width: 100%;
+   overflow: hidden;
+}
+
+#testimonials .text-container {
+   padding-top: 96px;
+   padding-bottom: 66px;
+}
+
+#testimonials h1 {
+   font: 18px/24px 'Outfit-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   color: #fff;
+}
+
+#testimonials h1 span {
+   display: none;
+}
+
+#testimonials .header-col {
+   padding-top: 9px;
+}
+
+#testimonials .header-col h1:before {
+   font-family: 'FontAwesome';
+   content: "\f10d";
+   padding-right: 10px;
+   font-size: 72px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #fff;
+}
+
+/*	Blockquotes */
+#testimonials blockquote {
+   margin: 0 0px 30px 0px;
+   padding-left: 0;
+   position: relative;
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+
+#testimonials blockquote:before {
+   content: none;
+}
+
+#testimonials blockquote p {
+   font-family: 'librebaskerville-italic', serif;
+   padding: 0;
+   font-size: 24px;
+   line-height: 48px;
+   color: #fff
+}
+
+#testimonials blockquote cite {
+   display: block;
+   font-size: 12px;
+   font-style: normal;
+   line-height: 18px;
+   color: #fff;
+}
+
+#testimonials blockquote cite:before {
+   content: "\2014 \0020";
+}
+
+#testimonials blockquote cite a,
+#testimonials blockquote cite a:visited {
+   color: #8B9798;
+   border: none
+}
+
+/* Flex Slider
+/* ------------------------------------------------------------------ */
+
+/* Reset */
+.flexslider a:active,
+.flexslider a:focus {
+   outline: none;
+}
+
+.slides,
+.flex-control-nav,
+.flex-direction-nav {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+.slides li {
+   margin: 0;
+   padding: 0;
+}
+
+/* Necessary Styles */
+.flexslider {
+   position: relative;
+   zoom: 1;
+   margin: 0;
+   padding: 0;
+}
+
+.flexslider .slides {
+   zoom: 1;
+}
+
+.flexslider .slides>li {
+   position: relative;
+}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides>li {
+   display: none;
+   -webkit-backface-visibility: hidden;
+}
+
+/* Suggested container for slide animation setups. Can replace this with your own */
+.flex-container {
+   zoom: 1;
+   position: relative;
+}
+
+/* Clearfix for .slides */
+.slides:before,
+.slides:after {
+   content: " ";
+   display: table;
+}
+
+.slides:after {
+   clear: both;
+}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides>li:first-child {
+   display: block;
+}
+
+/* Slider Styles */
+.slides {
+   zoom: 1;
+}
+
+.slides>li {
+   /*margin-right: 5px; */
+   overflow: hidden;
+}
+
+/* Control Nav */
+.flex-control-nav {
+   width: 100%;
+   position: absolute;
+   bottom: -20px;
+   text-align: left;
+}
+
+.flex-control-nav li {
+   margin: 0 6px;
+   display: inline-block;
+   zoom: 1;
+   display: inline;
+}
+
+.flex-control-paging li a {
+   width: 12px;
+   height: 12px;
+   display: block;
+   background: #ddd;
+   background: rgba(255, 255, 255, .3);
+   cursor: pointer;
+   text-indent: -9999px;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -o-border-radius: 20px;
+   border-radius: 20px;
+   box-shadow: inset 0 0 3px rgba(255, 255, 255, .3);
+}
+
+.flex-control-paging li a:hover {
+   background: #CCC;
+   background: rgba(255, 255, 255, .7);
+}
+
+.flex-control-paging li a.flex-active {
+   background: #fff;
+   background: rgba(255, 255, 255, .9);
+   cursor: default;
+}
+
+/* ------------------------------------------------------------------ */
+/* h. Contact Section
+/* ------------------------------------------------------------------ */
+
+#contact h1 {
+   font-family: 'Outfit', sans-serif;
+   letter-spacing: 1px;
+}
+
+#contact h1 span {
+   border-bottom: 3px solid #DD7840;
+   padding-bottom: 6px;
+}
+
+#contact h2 span {
+   display: none;
+}
+
+#contact h2:before {
+   font-family: 'FontAwesome';
+   content: "\f0e0";
+   padding-right: 10px;
+   font-size: 72px;
+   line-height: 72px;
+   text-align: left;
+   float: left;
+   color: #313131;
+}
+
+#contact .header-col {
+   padding-top: 6px;
+}
+
+#contact {
+   background: #2B2B2B;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+
+}
+
+#contact h3 {
+font-family: 'Outfit', sans-serif;
+}
+
+#contact .header-col {
+   padding-top: 9px;
+}
+
+#contact .main-col {
+   padding-right: 10%;
+}
+
+
+/* ------------------------------------------------------------------ */
+/* i. Footer
+/* ------------------------------------------------------------------ */
+
+footer {
+   padding-top: 48px;
+   margin-bottom: 48px;
+   color: #303030;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+}
+
+footer a,
+footer a:visited {
+   color: #525252;
+}
+
+footer a:hover,
+footer a:focus {
+   color: #fff;
+}
+
+/* copyright */
+footer .copyright {
+   margin: 0;
+   padding: 0;
+}
+
+footer .copyright li {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   line-height: 24px;
+}
+
+.ie footer .copyright li {
+   display: inline;
+}
+
+footer .copyright li:before {
+   content: "\2022";
+   padding-left: 10px;
+   padding-right: 10px;
+   color: #095153;
+}
+
+footer .copyright li:first-child:before {
+   display: none;
+}
+
+/* social links */
+footer .social-links {
+   margin: 18px 0 30px 0;
+   padding: 0;
+   font-size: 30px;
+}
+
+footer .social-links li {
+   display: inline-block;
+   margin: 0;
+   padding: 0;
+   margin-left: 42px;
+   color: #F06000;
+}
+
+footer .social-links li:first-child {
+   margin-left: 0;
+}
+
+/* Go To Top Button */
+#go-top {
+   position: absolute;
+   top: -24px;
+   left: 50%;
+   margin-left: -30px;
+}
+
+#go-top a {
+   text-decoration: none;
+   border: 0 none;
+   display: block;
+   width: 60px;
+   height: 60px;
+   background-color: #525252;
+
+   -webkit-transition: all 0.2s ease-in-out;
+   -moz-transition: all 0.2s ease-in-out;
+   -o-transition: all 0.2s ease-in-out;
+   -ms-transition: all 0.2s ease-in-out;
+   transition: all 0.2s ease-in-out;
+
+   color: #fff;
+   font-size: 21px;
+   line-height: 60px;
+   border-radius: 100%;
+}
+
+#go-top a:hover {
+   background-color: #0F9095;
+}
+
+#more {
+   display: none;
+}
+
+
+
+/* achievements */
+
+table {
+   border-collapse: collapse;
+   border: 1px solid #cdcdcd;
+   width: 100%;
+   font-family: 'Outfit', sans-serif;
+}
+
+td,
+th {
+   border: 1px solid #cdcdcd;
+   padding: 9px;
+   text-align: center;
+   color: white;
+}
+
+#achievements {
+   background: #2B2B2B;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#achievements a,
+#achievements a:visited {
+   color: #fff;
+}
+
+#achievements a:hover,
+#achievements a:focus {
+   color: #DD7840;
+}
+
+#achievements h2 {
+   font-family: 'Outfit', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
+#achievements p {
+   line-height: 30px;
+   color: #7A7A7A;
+}
+
+#achievements .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#achievements .contact-details {
+   width: 41.66667%;
+}
+
+#achievements .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+
+#achievements .main-col {
+   padding-right: 5%;
+}
+
+#achievements .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+
+#achievements .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+
+#achievements .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+/* Faculty */
+
+#faculty {
+   background:  #fff;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#faculty a,
+#faculty a:visited {
+   color: #fff;
+}
+
+#faculty a:hover,
+#faculty a:focus {
+   color: #DD7840;
+}
+
+#faculty h2 {
+   font-family: 'Outfit', sans-serif;
+   color: #2B2B2B;
+   margin-bottom: 12px;
+}
+
+#faculty p {
+   line-height: 30px;
+   color: #7A7A7A;
+}
+
+#faculty .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#faculty .contact-details {
+   width: 41.66667%;
+}
+
+#faculty .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+
+#faculty .main-col {
+   padding-right: 5%;
+}
+
+#faculty .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+
+#faculty .download .button:hover {
+   background:#2B2B2B;
+   color: #2B2B2B;
+}
+
+#faculty .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+
+.faculty-item .item-wrap img {
+   vertical-align: bottom;
+}
+
+#faculty img {
+   float: left;
+   height: 200px;
+   width: 200px;
+   object-fit: cover;
+}
+
+
+
+.groups{
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between;
+   align-items: center;
+}
+
+.grp{
+   text-align: center; display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+
+#memberimg{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   }
+
+   table td{
+vertical-align: middle;
+   }
+   .page {
+      padding: 40px;
+       
+    }
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    
+
+
+    
+/* alumni */
+
+#alumni {
+   background: #2B2B2B;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#alumni a,
+#alumni a:visited {
+   color: #fff;
+}
+
+#alumni a:hover,
+#alumni a:focus {
+   color: #DD7840;
+}
+
+#alumni h2 {
+   font-family: 'Outfit', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
+#alumni p {
+   line-height: 30px;
+   color: #7A7A7A;
+}
+
+#alumni .profile-pic {
+   position: relative;
+   width: 120px;
+   height: 120px;
+   border-radius: 100%;
+}
+
+#alumni .contact-details {
+   width: 41.66667%;
+}
+
+#alumni .download {
+   width: 58.33333%;
+   padding-top: 6px;
+}
+
+#alumni .main-col {
+   padding-right: 5%;
+}
+
+#alumni .download .button {
+   margin-top: 6px;
+   background: #444;
+}
+
+#alumni .download .button:hover {
+   background: #fff;
+   color: #2B2B2B;
+}
+
+#alumni .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+
+.alumni-item .item-wrap img {
+   vertical-align: bottom;
+}
+
+#alumni img {
+   float: left;
+   height: 200px;
+   width: 200px;
+   object-fit: cover;
+}
+
+/* Notice Poster Pop Out */
+
+.popupalert{
+   background-color: #ffffff;
+   padding: 20px;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   font:'Outfit-bold', sans-serif;
+   left: 50%;
+   top: 50%;
+   border-radius: 8px;
+   display: none; 
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   z-index: 10;
+}
+.popupalert button{
+   display: block;
+   margin:  0 0 20px auto;
+   background-color: transparent;
+   font-size: 30px;
+   color: #ffffff;
+     background: #03549a;
+     border-radius: 100%;
+     width: 40px;
+     height: 40px;
+
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.popupalert h3{
+  margin-top: -20px;
+  font:'Outfit-bold', sans-serif;
+
+}
+.popupalert p{
+   font-size: 14px;
+   font:'Outfit-bold', sans-serif;
+   text-align: justify;
+   margin: 20px 0;
+   line-height: 25px;
+}
+.popupalert a{
+   display: block;
+   width: 150px;
+   position: relative;
+   margin: 10px auto;
+   text-align: center;
+   background-color: #0f72e5;
+     border-radius: 20px;
+   color: #ffffff;
+   text-decoration: none;
+   padding: 8px 0;
+}
+
+#close{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+/* alumni */
+
+#alumni {
+   background-color: #2B2B2B;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#alumni a,
+#alumni a:visited {
+   color: #fff;
+}
+
+#alumni a:hover,
+#alumni a:focus {
+   color: #DD7840;
+}
+
+#alumni h2 {
+   font-family: 'Outfit', sans-serif;
+   color: #fff;
+   margin-bottom: 12px;
+}
+
+#alumni .main-col {
+   padding-right: 5%;
+}
+
+#albox {
+   background-color:#ededed;
+   border-radius: 12px;
+   box-sizing: border-box;
+   padding: 45px;
+   width: 30%;
+   color:#1e1e1e;
+   margin-right: 30px;
+
+}
+
+#albox h6 {
+   transition: 0.25s;
+}
+
+#albox:hover {
+   box-shadow: 2px 5px 5px 2px #383838;
+   border-radius: 12px;
+   background-color:#fff;
+   cursor: default;
+   color: rgb(17, 17, 17)
+}
+>>>>>>> 1d0fae84dfa08373cab2a6f038834aed4031585c
