@@ -37,6 +37,8 @@ function renderTeam() {
         html += `<div class="remodel-grid">`;
 
         group.members.forEach(member => {
+            if (member.hidden) return;
+
             let socialHtml = '';
 
             // Handle both Array (old) and Object (new) formats for smooth migration
