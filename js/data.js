@@ -34,7 +34,7 @@ window.aerossData = {
         {
             year: "Class IX",
             members: [
-                { name: "Anya Garg", role: "MEMBER", image: "members/Anya.jpeg", socials: { linkedin: "", instagram: "", email: "" } },
+                { name: "Anya Garg", role: "MEMBER", image: "members 25/IX-Anya.jpg", socials: { instagram: "https://www.instagram.com/anya_enfleur", email: "mailto:anya.toshiba@gmail.com" } },
             ]
         },
         {
@@ -57,7 +57,8 @@ window.aerossData = {
             year: "2024-25",
             members: [
                 { name: "Ameya Aneja", role: "PRESIDENT" },
-                { name: "Aryaa Dube", role: "VICE PRESIDENT" }
+                { name: "Aryaa Dube", role: "PRESIDENT" },
+                { name: "Saamir Ali Khan", role: "VICE-PRESIDENT" }
             ]
         },
         {
