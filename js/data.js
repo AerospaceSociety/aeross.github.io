@@ -16,7 +16,7 @@ window.aerossData = {
                 { name: "Ryaan Namit Jain", role: "SENIOR MEMBER", image: "members 25/XI- Ryaan.jpg", socials: { linkedin: "", instagram: "https://wwww.instagram.com/ryaannamitjain_/", email: "mailto:ryaannamitjain@gmail.com" } },
                 { name: "Aarav Anand", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: { linkedin: "linkedin.com/in/aarav-anand-b24b36358", instagram: "instagram.com/aaravanandd", email: "mailto:aaravanand0301@gmail.com" } },
                 { name: "Tarushi Tomar", role: "SENIOR MEMBER", image: "members 25/XI-Tarushi.jpg", socials: { email: "mailto:tarushitomar0910@gmail.com", spotify: "open.spotify.com/user/314ipmyt62uzmajordk4fg3pwrmi", pinterest: "pinterest.com/t4rushi/", bereal: "https://bere.al/t4rushiiiiii" } },
-                { name: "Farzooque Hasan", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: { github: "https://github.com/FarzooqueHasan", email: "mailto:farzooquehasan@gmail.com" } }
+                { name: "Farzooque Hasan", role: "SENIOR MEMBER", image: "members/Blank.jpg", socials: { github: "https://github.com/FarzooqueHasan", email: "mailto:farzooquehasan@gmail.com" } },
                 { name: "Siddhharth Srivastava", role: "MEMBER", image: "members 25/XI- Sid.jpg", socials: { instagram: "https://www.instagram.com/do_i._.care", email: "mailto:siddharth2539@gmail.com", spotify: "https://open.spotify.com/user/cfcfh4aukeny6nrgjnvdl7nu0?si=Y90W8fZtR-yacn1kFN4xRA", github: "https://github.com/upbeat25yt" } },
                 { name: "Aamna Beg", role: "MEMBER", image: "members/Blank.jpg", socials: { linkedin: "", instagram: "", email: "" } },
                 { name: "Manan Lall", role: "Ad-hoc", image: "members 25/XI- Manan.jpg", socials: { linkedin: "", instagram: "", email: "" }, hidden: true },
@@ -28,7 +28,7 @@ window.aerossData = {
                 { name: "Kiara Kapoor", role: "SENIOR MEMBER", image: "members 25/X- Kiara.jpeg", socials: { linkedin: "linkedin.com/in/kiara-kapoor-a1ab43394", email: "kiarakapoorlibra@gmail.com", github: "https://github.com/KapoorKiara" } },
                 { name: "Sakshi Sinha", role: "MEMBER", image: "members 25/X- sakshi.jpg", socials: { instagram: "https://www.instagram.com/02ssakshi_?igsh=enc5ajBsM2x5bGF0", email: "mailto:sakshisinha05100@gmail.com" } },
                 { name: "Manya Gupta", role: "MEMBER", image: "members 25/X-Manya.jpg", socials: { linkedin: "", instagram: "", email: "" } },
-                { name: "Showaiz", role: "MEMBER", image: "members 25/X- Showaiz.jpg", socials: { linkedin: "", instagram: "", email: "" }, hidden: true }
+                { name: "Showaiz", role: "MEMBER", image: "members 25/X- Showaiz.jpg", socials: { linkedin: "", instagram: "", email: "" }}
             ]
         },
         {
