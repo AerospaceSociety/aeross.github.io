@@ -17,7 +17,10 @@ function update(e){
 
 
   //stars home page
-window.requestAnimFrame = (function(){   return  window.requestAnimationFrame})();
+window.requestAnimFrame = function(callback) {
+  if (window.requestAnimationFrame) return window.requestAnimationFrame(callback);
+  return window.setTimeout(callback, 1000 / 60);
+};
 var canvas = document.getElementById("space");
 var c = canvas.getContext("2d");
 var numStars = 1900;
@@ -73,9 +76,10 @@ function drawStars(){
   var pixelX, pixelY, pixelRadius;
   
   // Resize to the screen
-  if(canvas.width != window.innerWidth || canvas.width != window.innerWidth){
+  if(canvas.width != window.innerWidth || canvas.height != window.innerHeight){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+    focalLength = 600;
     initializeStars();
   }
   if(warp==0)

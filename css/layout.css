@@ -1,4 +1,4 @@
-﻿/*
+/*
 =====================================================================
 *   Ceevee v1.0 Layout Stylesheet
 *   url: styleshout.com
@@ -35,7 +35,7 @@ body {
 /* ------------------------------------------------------------------ */
 
 header {
-   height: 800px;
+   height: 100vh;
    min-height: 500px;
    width: 100%;
    -webkit-background-size: cover !important;
@@ -45,10 +45,10 @@ header {
    image-rendering: pixelated;
    position: absolute;
    z-index: 9;
-   bottom: 0;
+   top: 0;
    left: 0;
    right: 0;
-   margin: 20px auto;
+   margin: 0 auto;
    color: rgba(209, 255, 255, 1);
 }
 
@@ -125,6 +125,8 @@ header .banner-text hr {
 
 .aeross_logo{
    width: 750px;
+   max-width: 100%;
+   transform: translateX(-6%);
 }
 /* header social links */
 header .social {
